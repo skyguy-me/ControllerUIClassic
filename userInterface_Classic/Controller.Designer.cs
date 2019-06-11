@@ -46,6 +46,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.portsComboBox = new System.Windows.Forms.ComboBox();
             this.Temperature = new System.Windows.Forms.TabPage();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.heaterSetLabel3 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.heaterSetLabel2 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.heaterSetLabel1 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.resetTemperatureButton = new System.Windows.Forms.Button();
             this.setTemperatureButton = new System.Windows.Forms.Button();
@@ -169,16 +179,6 @@
             this.XaxisNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.heaterSetLabel2 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.heaterSetLabel1 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.heaterSetLabel3 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -186,6 +186,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Temperature.SuspendLayout();
+            this.groupBox23.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -224,7 +225,6 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).BeginInit();
-            this.groupBox23.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabController
@@ -235,10 +235,11 @@
             this.mainTabController.Controls.Add(this.Pressure);
             this.mainTabController.Controls.Add(this.Positioning);
             this.mainTabController.Controls.Add(this.GODs_Eye);
-            this.mainTabController.Location = new System.Drawing.Point(2, -2);
+            this.mainTabController.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainTabController.Location = new System.Drawing.Point(0, 0);
             this.mainTabController.Name = "mainTabController";
             this.mainTabController.SelectedIndex = 0;
-            this.mainTabController.Size = new System.Drawing.Size(508, 324);
+            this.mainTabController.Size = new System.Drawing.Size(507, 322);
             this.mainTabController.TabIndex = 0;
             // 
             // Configuration
@@ -249,7 +250,7 @@
             this.Configuration.Location = new System.Drawing.Point(4, 22);
             this.Configuration.Name = "Configuration";
             this.Configuration.Padding = new System.Windows.Forms.Padding(3);
-            this.Configuration.Size = new System.Drawing.Size(500, 298);
+            this.Configuration.Size = new System.Drawing.Size(499, 296);
             this.Configuration.TabIndex = 0;
             this.Configuration.Text = "Configuration";
             this.Configuration.UseVisualStyleBackColor = true;
@@ -435,6 +436,105 @@
             this.Temperature.TabIndex = 1;
             this.Temperature.Text = "Temperature";
             this.Temperature.UseVisualStyleBackColor = true;
+            // 
+            // groupBox23
+            // 
+            this.groupBox23.Controls.Add(this.label52);
+            this.groupBox23.Controls.Add(this.heaterSetLabel3);
+            this.groupBox23.Controls.Add(this.label54);
+            this.groupBox23.Controls.Add(this.label40);
+            this.groupBox23.Controls.Add(this.heaterSetLabel2);
+            this.groupBox23.Controls.Add(this.label46);
+            this.groupBox23.Controls.Add(this.heaterSetLabel1);
+            this.groupBox23.Controls.Add(this.label50);
+            this.groupBox23.Controls.Add(this.label51);
+            this.groupBox23.Location = new System.Drawing.Point(203, 172);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(277, 109);
+            this.groupBox23.TabIndex = 13;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Current Settings";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(115, 81);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(47, 13);
+            this.label52.TabIndex = 23;
+            this.label52.Text = "Degrees";
+            // 
+            // heaterSetLabel3
+            // 
+            this.heaterSetLabel3.AutoSize = true;
+            this.heaterSetLabel3.Location = new System.Drawing.Point(81, 81);
+            this.heaterSetLabel3.Name = "heaterSetLabel3";
+            this.heaterSetLabel3.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel3.TabIndex = 22;
+            this.heaterSetLabel3.Text = "18.0";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(23, 81);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(51, 13);
+            this.label54.TabIndex = 21;
+            this.label54.Text = "Heater 3:";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(115, 55);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(47, 13);
+            this.label40.TabIndex = 20;
+            this.label40.Text = "Degrees";
+            // 
+            // heaterSetLabel2
+            // 
+            this.heaterSetLabel2.AutoSize = true;
+            this.heaterSetLabel2.Location = new System.Drawing.Point(81, 55);
+            this.heaterSetLabel2.Name = "heaterSetLabel2";
+            this.heaterSetLabel2.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel2.TabIndex = 10;
+            this.heaterSetLabel2.Text = "18.0";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(115, 32);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(47, 13);
+            this.label46.TabIndex = 19;
+            this.label46.Text = "Degrees";
+            // 
+            // heaterSetLabel1
+            // 
+            this.heaterSetLabel1.AutoSize = true;
+            this.heaterSetLabel1.Location = new System.Drawing.Point(81, 32);
+            this.heaterSetLabel1.Name = "heaterSetLabel1";
+            this.heaterSetLabel1.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel1.TabIndex = 9;
+            this.heaterSetLabel1.Text = "18.0";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(23, 55);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(51, 13);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Heater 2:";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(23, 32);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(51, 13);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Heater 1:";
             // 
             // groupBox4
             // 
@@ -1843,105 +1943,6 @@
             this.GODs_Eye.Text = "God\'s Eye";
             this.GODs_Eye.UseVisualStyleBackColor = true;
             // 
-            // groupBox23
-            // 
-            this.groupBox23.Controls.Add(this.label52);
-            this.groupBox23.Controls.Add(this.heaterSetLabel3);
-            this.groupBox23.Controls.Add(this.label54);
-            this.groupBox23.Controls.Add(this.label40);
-            this.groupBox23.Controls.Add(this.heaterSetLabel2);
-            this.groupBox23.Controls.Add(this.label46);
-            this.groupBox23.Controls.Add(this.heaterSetLabel1);
-            this.groupBox23.Controls.Add(this.label50);
-            this.groupBox23.Controls.Add(this.label51);
-            this.groupBox23.Location = new System.Drawing.Point(203, 172);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(277, 109);
-            this.groupBox23.TabIndex = 13;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Current Settings";
-            // 
-            // heaterSetLabel2
-            // 
-            this.heaterSetLabel2.AutoSize = true;
-            this.heaterSetLabel2.Location = new System.Drawing.Point(81, 55);
-            this.heaterSetLabel2.Name = "heaterSetLabel2";
-            this.heaterSetLabel2.Size = new System.Drawing.Size(28, 13);
-            this.heaterSetLabel2.TabIndex = 10;
-            this.heaterSetLabel2.Text = "18.0";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(115, 32);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(47, 13);
-            this.label46.TabIndex = 19;
-            this.label46.Text = "Degrees";
-            // 
-            // heaterSetLabel1
-            // 
-            this.heaterSetLabel1.AutoSize = true;
-            this.heaterSetLabel1.Location = new System.Drawing.Point(81, 32);
-            this.heaterSetLabel1.Name = "heaterSetLabel1";
-            this.heaterSetLabel1.Size = new System.Drawing.Size(28, 13);
-            this.heaterSetLabel1.TabIndex = 9;
-            this.heaterSetLabel1.Text = "18.0";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(23, 55);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(51, 13);
-            this.label50.TabIndex = 1;
-            this.label50.Text = "Heater 2:";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(23, 32);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(51, 13);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Heater 1:";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(115, 55);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(47, 13);
-            this.label40.TabIndex = 20;
-            this.label40.Text = "Degrees";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(115, 81);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(47, 13);
-            this.label52.TabIndex = 23;
-            this.label52.Text = "Degrees";
-            // 
-            // heaterSetLabel3
-            // 
-            this.heaterSetLabel3.AutoSize = true;
-            this.heaterSetLabel3.Location = new System.Drawing.Point(81, 81);
-            this.heaterSetLabel3.Name = "heaterSetLabel3";
-            this.heaterSetLabel3.Size = new System.Drawing.Size(28, 13);
-            this.heaterSetLabel3.TabIndex = 22;
-            this.heaterSetLabel3.Text = "18.0";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(23, 81);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(51, 13);
-            this.label54.TabIndex = 21;
-            this.label54.Text = "Heater 3:";
-            // 
             // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1961,6 +1962,8 @@
             this.groupBox1.PerformLayout();
             this.Temperature.ResumeLayout(false);
             this.Temperature.PerformLayout();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -2014,8 +2017,6 @@
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).EndInit();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
             this.ResumeLayout(false);
 
         }
