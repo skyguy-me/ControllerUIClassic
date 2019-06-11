@@ -20,6 +20,7 @@ namespace userInterface_Classic
 
         private void Voltage_Click(object sender, EventArgs e)
         {
+            
         }
 
         private void Configuration_Click(object sender, EventArgs e)
