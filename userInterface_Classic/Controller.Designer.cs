@@ -64,16 +64,38 @@
             this.label2 = new System.Windows.Forms.Label();
             this.HeaterConfigPictureBox1 = new System.Windows.Forms.PictureBox();
             this.Voltage = new System.Windows.Forms.TabPage();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel6 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel5 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel4 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel3 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel2 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.PSUSetVoltLabel1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.VoltageResetButton = new System.Windows.Forms.Button();
             this.VoltageSetButton = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.VoltCheckBox6 = new System.Windows.Forms.CheckBox();
             this.VoltCheckBox5 = new System.Windows.Forms.CheckBox();
             this.VoltCheckBox4 = new System.Windows.Forms.CheckBox();
             this.VoltCheckBox3 = new System.Windows.Forms.CheckBox();
             this.VoltCheckBox2 = new System.Windows.Forms.CheckBox();
             this.VoltCheckBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.voltNumericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -85,6 +107,7 @@
             this.voltNumericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.voltNumericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -93,17 +116,22 @@
             this.label6 = new System.Windows.Forms.Label();
             this.VoltpictureBox1 = new System.Windows.Forms.PictureBox();
             this.Pressure = new System.Windows.Forms.TabPage();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.zone2SetLabel = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.zone1SetLabel = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.ResetZonePressureButton1 = new System.Windows.Forms.Button();
+            this.SetZonePressureButton2 = new System.Windows.Forms.Button();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.zone2EnableCheckBox4 = new System.Windows.Forms.CheckBox();
+            this.zone1EnableCheckBox5 = new System.Windows.Forms.CheckBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.zone1NumericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.Zone2umericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -141,6 +169,16 @@
             this.XaxisNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.heaterSetLabel2 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.heaterSetLabel1 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.heaterSetLabel3 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -156,9 +194,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.heater3TempNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeaterConfigPictureBox1)).BeginInit();
             this.Voltage.SuspendLayout();
+            this.groupBox22.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown1)).BeginInit();
@@ -167,11 +207,12 @@
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).BeginInit();
             this.Pressure.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zone1NumericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Zone2umericUpDown4)).BeginInit();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Positioning.SuspendLayout();
@@ -183,6 +224,7 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).BeginInit();
+            this.groupBox23.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabController
@@ -381,6 +423,7 @@
             // 
             // Temperature
             // 
+            this.Temperature.Controls.Add(this.groupBox23);
             this.Temperature.Controls.Add(this.groupBox4);
             this.Temperature.Controls.Add(this.label2);
             this.Temperature.Controls.Add(this.HeaterConfigPictureBox1);
@@ -417,6 +460,7 @@
             this.resetTemperatureButton.TabIndex = 16;
             this.resetTemperatureButton.Text = "Reset";
             this.resetTemperatureButton.UseVisualStyleBackColor = true;
+            this.resetTemperatureButton.Click += new System.EventHandler(this.ResetTemperatureButton_Click);
             // 
             // setTemperatureButton
             // 
@@ -426,6 +470,7 @@
             this.setTemperatureButton.TabIndex = 15;
             this.setTemperatureButton.Text = "Set";
             this.setTemperatureButton.UseVisualStyleBackColor = true;
+            this.setTemperatureButton.Click += new System.EventHandler(this.SetTemperatureButton_Click);
             // 
             // groupBox7
             // 
@@ -480,24 +525,87 @@
             // 
             // heater1TempNumericUpDown
             // 
+            this.heater1TempNumericUpDown.DecimalPlaces = 1;
+            this.heater1TempNumericUpDown.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.heater1TempNumericUpDown.Location = new System.Drawing.Point(5, 22);
+            this.heater1TempNumericUpDown.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.heater1TempNumericUpDown.Minimum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             this.heater1TempNumericUpDown.Name = "heater1TempNumericUpDown";
             this.heater1TempNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.heater1TempNumericUpDown.TabIndex = 2;
+            this.heater1TempNumericUpDown.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             // 
             // heater2TempNumericUpDown
             // 
+            this.heater2TempNumericUpDown.DecimalPlaces = 1;
+            this.heater2TempNumericUpDown.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.heater2TempNumericUpDown.Location = new System.Drawing.Point(5, 48);
+            this.heater2TempNumericUpDown.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.heater2TempNumericUpDown.Minimum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             this.heater2TempNumericUpDown.Name = "heater2TempNumericUpDown";
             this.heater2TempNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.heater2TempNumericUpDown.TabIndex = 4;
+            this.heater2TempNumericUpDown.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             // 
             // heater3TempNumericUpDown
             // 
+            this.heater3TempNumericUpDown.DecimalPlaces = 1;
+            this.heater3TempNumericUpDown.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.heater3TempNumericUpDown.Location = new System.Drawing.Point(5, 77);
+            this.heater3TempNumericUpDown.Maximum = new decimal(new int[] {
+            250,
+            0,
+            0,
+            0});
+            this.heater3TempNumericUpDown.Minimum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             this.heater3TempNumericUpDown.Name = "heater3TempNumericUpDown";
             this.heater3TempNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.heater3TempNumericUpDown.TabIndex = 7;
+            this.heater3TempNumericUpDown.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             // 
             // label5
             // 
@@ -556,6 +664,7 @@
             // 
             // Voltage
             // 
+            this.Voltage.Controls.Add(this.groupBox22);
             this.Voltage.Controls.Add(this.groupBox8);
             this.Voltage.Controls.Add(this.label6);
             this.Voltage.Controls.Add(this.VoltpictureBox1);
@@ -567,6 +676,195 @@
             this.Voltage.UseVisualStyleBackColor = true;
             this.Voltage.Click += new System.EventHandler(this.Voltage_Click);
             // 
+            // groupBox22
+            // 
+            this.groupBox22.Controls.Add(this.label47);
+            this.groupBox22.Controls.Add(this.label48);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel6);
+            this.groupBox22.Controls.Add(this.label42);
+            this.groupBox22.Controls.Add(this.label45);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel5);
+            this.groupBox22.Controls.Add(this.label30);
+            this.groupBox22.Controls.Add(this.label31);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel4);
+            this.groupBox22.Controls.Add(this.label38);
+            this.groupBox22.Controls.Add(this.label39);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel3);
+            this.groupBox22.Controls.Add(this.label35);
+            this.groupBox22.Controls.Add(this.label36);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel2);
+            this.groupBox22.Controls.Add(this.label34);
+            this.groupBox22.Controls.Add(this.label32);
+            this.groupBox22.Controls.Add(this.PSUSetVoltLabel1);
+            this.groupBox22.Location = new System.Drawing.Point(12, 226);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Size = new System.Drawing.Size(463, 64);
+            this.groupBox22.TabIndex = 13;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "Current Settings";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(266, 47);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(38, 13);
+            this.label47.TabIndex = 35;
+            this.label47.Text = "PSU 6";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(350, 47);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(21, 13);
+            this.label48.TabIndex = 34;
+            this.label48.Text = "KV";
+            // 
+            // PSUSetVoltLabel6
+            // 
+            this.PSUSetVoltLabel6.AutoSize = true;
+            this.PSUSetVoltLabel6.Location = new System.Drawing.Point(310, 47);
+            this.PSUSetVoltLabel6.Name = "PSUSetVoltLabel6";
+            this.PSUSetVoltLabel6.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel6.TabIndex = 33;
+            this.PSUSetVoltLabel6.Text = "0.000";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(266, 20);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(38, 13);
+            this.label42.TabIndex = 32;
+            this.label42.Text = "PSU 5";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(350, 20);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(21, 13);
+            this.label45.TabIndex = 31;
+            this.label45.Text = "KV";
+            // 
+            // PSUSetVoltLabel5
+            // 
+            this.PSUSetVoltLabel5.AutoSize = true;
+            this.PSUSetVoltLabel5.Location = new System.Drawing.Point(310, 20);
+            this.PSUSetVoltLabel5.Name = "PSUSetVoltLabel5";
+            this.PSUSetVoltLabel5.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel5.TabIndex = 30;
+            this.PSUSetVoltLabel5.Text = "0.000";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(142, 47);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(38, 13);
+            this.label30.TabIndex = 29;
+            this.label30.Text = "PSU 4";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(226, 47);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(21, 13);
+            this.label31.TabIndex = 28;
+            this.label31.Text = "KV";
+            // 
+            // PSUSetVoltLabel4
+            // 
+            this.PSUSetVoltLabel4.AutoSize = true;
+            this.PSUSetVoltLabel4.Location = new System.Drawing.Point(186, 47);
+            this.PSUSetVoltLabel4.Name = "PSUSetVoltLabel4";
+            this.PSUSetVoltLabel4.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel4.TabIndex = 27;
+            this.PSUSetVoltLabel4.Text = "0.000";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(142, 20);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(38, 13);
+            this.label38.TabIndex = 26;
+            this.label38.Text = "PSU 3";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(226, 20);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(21, 13);
+            this.label39.TabIndex = 25;
+            this.label39.Text = "KV";
+            // 
+            // PSUSetVoltLabel3
+            // 
+            this.PSUSetVoltLabel3.AutoSize = true;
+            this.PSUSetVoltLabel3.Location = new System.Drawing.Point(186, 20);
+            this.PSUSetVoltLabel3.Name = "PSUSetVoltLabel3";
+            this.PSUSetVoltLabel3.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel3.TabIndex = 24;
+            this.PSUSetVoltLabel3.Text = "0.000";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(12, 47);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(38, 13);
+            this.label35.TabIndex = 23;
+            this.label35.Text = "PSU 2";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(96, 47);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(21, 13);
+            this.label36.TabIndex = 22;
+            this.label36.Text = "KV";
+            // 
+            // PSUSetVoltLabel2
+            // 
+            this.PSUSetVoltLabel2.AutoSize = true;
+            this.PSUSetVoltLabel2.Location = new System.Drawing.Point(56, 47);
+            this.PSUSetVoltLabel2.Name = "PSUSetVoltLabel2";
+            this.PSUSetVoltLabel2.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel2.TabIndex = 21;
+            this.PSUSetVoltLabel2.Text = "0.000";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(12, 20);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(38, 13);
+            this.label34.TabIndex = 19;
+            this.label34.Text = "PSU 1";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(96, 20);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(21, 13);
+            this.label32.TabIndex = 19;
+            this.label32.Text = "KV";
+            // 
+            // PSUSetVoltLabel1
+            // 
+            this.PSUSetVoltLabel1.AutoSize = true;
+            this.PSUSetVoltLabel1.Location = new System.Drawing.Point(56, 20);
+            this.PSUSetVoltLabel1.Name = "PSUSetVoltLabel1";
+            this.PSUSetVoltLabel1.Size = new System.Drawing.Size(34, 13);
+            this.PSUSetVoltLabel1.TabIndex = 9;
+            this.PSUSetVoltLabel1.Text = "0.000";
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.VoltageResetButton);
@@ -576,7 +874,7 @@
             this.groupBox8.Controls.Add(this.groupBox11);
             this.groupBox8.Location = new System.Drawing.Point(198, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(277, 223);
+            this.groupBox8.Size = new System.Drawing.Size(277, 228);
             this.groupBox8.TabIndex = 8;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Set Point";
@@ -589,6 +887,7 @@
             this.VoltageResetButton.TabIndex = 16;
             this.VoltageResetButton.Text = "Reset";
             this.VoltageResetButton.UseVisualStyleBackColor = true;
+            this.VoltageResetButton.Click += new System.EventHandler(this.VoltageResetButton_Click);
             // 
             // VoltageSetButton
             // 
@@ -598,9 +897,11 @@
             this.VoltageSetButton.TabIndex = 15;
             this.VoltageSetButton.Text = "Set";
             this.VoltageSetButton.UseVisualStyleBackColor = true;
+            this.VoltageSetButton.Click += new System.EventHandler(this.VoltageSetButton_Click);
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.VoltCheckBox6);
             this.groupBox9.Controls.Add(this.VoltCheckBox5);
             this.groupBox9.Controls.Add(this.VoltCheckBox4);
             this.groupBox9.Controls.Add(this.VoltCheckBox3);
@@ -612,6 +913,15 @@
             this.groupBox9.TabIndex = 14;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Enable";
+            // 
+            // VoltCheckBox6
+            // 
+            this.VoltCheckBox6.AutoSize = true;
+            this.VoltCheckBox6.Location = new System.Drawing.Point(21, 155);
+            this.VoltCheckBox6.Name = "VoltCheckBox6";
+            this.VoltCheckBox6.Size = new System.Drawing.Size(15, 14);
+            this.VoltCheckBox6.TabIndex = 5;
+            this.VoltCheckBox6.UseVisualStyleBackColor = true;
             // 
             // VoltCheckBox5
             // 
@@ -660,6 +970,8 @@
             // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.label37);
+            this.groupBox10.Controls.Add(this.voltNumericUpDown6);
             this.groupBox10.Controls.Add(this.label15);
             this.groupBox10.Controls.Add(this.label14);
             this.groupBox10.Controls.Add(this.label13);
@@ -676,6 +988,28 @@
             this.groupBox10.TabIndex = 13;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Desired Voltage";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(79, 152);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(21, 13);
+            this.label37.TabIndex = 25;
+            this.label37.Text = "KV";
+            // 
+            // voltNumericUpDown6
+            // 
+            this.voltNumericUpDown6.DecimalPlaces = 3;
+            this.voltNumericUpDown6.Location = new System.Drawing.Point(0, 149);
+            this.voltNumericUpDown6.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.voltNumericUpDown6.Name = "voltNumericUpDown6";
+            this.voltNumericUpDown6.Size = new System.Drawing.Size(73, 20);
+            this.voltNumericUpDown6.TabIndex = 24;
             // 
             // label15
             // 
@@ -724,41 +1058,77 @@
             // 
             // voltNumericUpDown5
             // 
+            this.voltNumericUpDown5.DecimalPlaces = 3;
             this.voltNumericUpDown5.Location = new System.Drawing.Point(0, 123);
+            this.voltNumericUpDown5.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.voltNumericUpDown5.Name = "voltNumericUpDown5";
             this.voltNumericUpDown5.Size = new System.Drawing.Size(73, 20);
             this.voltNumericUpDown5.TabIndex = 9;
             // 
             // voltNumericUpDown4
             // 
+            this.voltNumericUpDown4.DecimalPlaces = 3;
             this.voltNumericUpDown4.Location = new System.Drawing.Point(0, 97);
+            this.voltNumericUpDown4.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.voltNumericUpDown4.Name = "voltNumericUpDown4";
             this.voltNumericUpDown4.Size = new System.Drawing.Size(73, 20);
             this.voltNumericUpDown4.TabIndex = 8;
             // 
             // voltNumericUpDown1
             // 
+            this.voltNumericUpDown1.DecimalPlaces = 3;
+            this.voltNumericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
             this.voltNumericUpDown1.Location = new System.Drawing.Point(0, 21);
+            this.voltNumericUpDown1.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.voltNumericUpDown1.Name = "voltNumericUpDown1";
             this.voltNumericUpDown1.Size = new System.Drawing.Size(73, 20);
             this.voltNumericUpDown1.TabIndex = 2;
             // 
             // voltNumericUpDown2
             // 
+            this.voltNumericUpDown2.DecimalPlaces = 3;
             this.voltNumericUpDown2.Location = new System.Drawing.Point(0, 45);
+            this.voltNumericUpDown2.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.voltNumericUpDown2.Name = "voltNumericUpDown2";
             this.voltNumericUpDown2.Size = new System.Drawing.Size(73, 20);
             this.voltNumericUpDown2.TabIndex = 4;
             // 
             // voltNumericUpDown3
             // 
+            this.voltNumericUpDown3.DecimalPlaces = 3;
             this.voltNumericUpDown3.Location = new System.Drawing.Point(0, 71);
+            this.voltNumericUpDown3.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.voltNumericUpDown3.Name = "voltNumericUpDown3";
             this.voltNumericUpDown3.Size = new System.Drawing.Size(73, 20);
             this.voltNumericUpDown3.TabIndex = 7;
             // 
             // groupBox11
             // 
+            this.groupBox11.Controls.Add(this.label33);
             this.groupBox11.Controls.Add(this.label11);
             this.groupBox11.Controls.Add(this.label10);
             this.groupBox11.Controls.Add(this.label7);
@@ -770,6 +1140,15 @@
             this.groupBox11.TabIndex = 12;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Power Suppy";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(2, 152);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(38, 13);
+            this.label33.TabIndex = 19;
+            this.label33.Text = "PSU 6";
             // 
             // label11
             // 
@@ -837,6 +1216,7 @@
             // 
             // Pressure
             // 
+            this.Pressure.Controls.Add(this.groupBox21);
             this.Pressure.Controls.Add(this.groupBox12);
             this.Pressure.Controls.Add(this.label26);
             this.Pressure.Controls.Add(this.pictureBox1);
@@ -847,10 +1227,79 @@
             this.Pressure.Text = "Pressure";
             this.Pressure.UseVisualStyleBackColor = true;
             // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.label19);
+            this.groupBox21.Controls.Add(this.zone2SetLabel);
+            this.groupBox21.Controls.Add(this.label20);
+            this.groupBox21.Controls.Add(this.zone1SetLabel);
+            this.groupBox21.Controls.Add(this.label43);
+            this.groupBox21.Controls.Add(this.label44);
+            this.groupBox21.Location = new System.Drawing.Point(198, 166);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(277, 96);
+            this.groupBox21.TabIndex = 12;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "Current Settings";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(115, 61);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 13);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "mBar";
+            // 
+            // zone2SetLabel
+            // 
+            this.zone2SetLabel.AutoSize = true;
+            this.zone2SetLabel.Location = new System.Drawing.Point(73, 61);
+            this.zone2SetLabel.Name = "zone2SetLabel";
+            this.zone2SetLabel.Size = new System.Drawing.Size(46, 13);
+            this.zone2SetLabel.TabIndex = 10;
+            this.zone2SetLabel.Text = "0.00001";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(115, 32);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 13);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "mBar";
+            // 
+            // zone1SetLabel
+            // 
+            this.zone1SetLabel.AutoSize = true;
+            this.zone1SetLabel.Location = new System.Drawing.Point(73, 32);
+            this.zone1SetLabel.Name = "zone1SetLabel";
+            this.zone1SetLabel.Size = new System.Drawing.Size(46, 13);
+            this.zone1SetLabel.TabIndex = 9;
+            this.zone1SetLabel.Text = "0.00001";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(23, 61);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(44, 13);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Zone 2:";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(23, 32);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(44, 13);
+            this.label44.TabIndex = 0;
+            this.label44.Text = "Zone 1:";
+            // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.button1);
-            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Controls.Add(this.ResetZonePressureButton1);
+            this.groupBox12.Controls.Add(this.SetZonePressureButton2);
             this.groupBox12.Controls.Add(this.groupBox13);
             this.groupBox12.Controls.Add(this.groupBox14);
             this.groupBox12.Controls.Add(this.groupBox15);
@@ -861,28 +1310,30 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Set Point";
             // 
-            // button1
+            // ResetZonePressureButton1
             // 
-            this.button1.Location = new System.Drawing.Point(109, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ResetZonePressureButton1.Location = new System.Drawing.Point(109, 121);
+            this.ResetZonePressureButton1.Name = "ResetZonePressureButton1";
+            this.ResetZonePressureButton1.Size = new System.Drawing.Size(75, 23);
+            this.ResetZonePressureButton1.TabIndex = 16;
+            this.ResetZonePressureButton1.Text = "Reset";
+            this.ResetZonePressureButton1.UseVisualStyleBackColor = true;
+            this.ResetZonePressureButton1.Click += new System.EventHandler(this.ResetZonePressureButton1_Click);
             // 
-            // button2
+            // SetZonePressureButton2
             // 
-            this.button2.Location = new System.Drawing.Point(190, 121);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Set";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SetZonePressureButton2.Location = new System.Drawing.Point(190, 121);
+            this.SetZonePressureButton2.Name = "SetZonePressureButton2";
+            this.SetZonePressureButton2.Size = new System.Drawing.Size(75, 23);
+            this.SetZonePressureButton2.TabIndex = 15;
+            this.SetZonePressureButton2.Text = "Set";
+            this.SetZonePressureButton2.UseVisualStyleBackColor = true;
+            this.SetZonePressureButton2.Click += new System.EventHandler(this.SetZonePressureButton2_Click);
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.checkBox4);
-            this.groupBox13.Controls.Add(this.checkBox5);
+            this.groupBox13.Controls.Add(this.zone2EnableCheckBox4);
+            this.groupBox13.Controls.Add(this.zone1EnableCheckBox5);
             this.groupBox13.Location = new System.Drawing.Point(210, 19);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(55, 83);
@@ -890,30 +1341,32 @@
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Enable";
             // 
-            // checkBox4
+            // zone2EnableCheckBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(21, 45);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 1;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.zone2EnableCheckBox4.AutoSize = true;
+            this.zone2EnableCheckBox4.Checked = true;
+            this.zone2EnableCheckBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.zone2EnableCheckBox4.Location = new System.Drawing.Point(21, 45);
+            this.zone2EnableCheckBox4.Name = "zone2EnableCheckBox4";
+            this.zone2EnableCheckBox4.Size = new System.Drawing.Size(15, 14);
+            this.zone2EnableCheckBox4.TabIndex = 1;
+            this.zone2EnableCheckBox4.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // zone1EnableCheckBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(21, 21);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.zone1EnableCheckBox5.AutoSize = true;
+            this.zone1EnableCheckBox5.Checked = true;
+            this.zone1EnableCheckBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.zone1EnableCheckBox5.Location = new System.Drawing.Point(21, 21);
+            this.zone1EnableCheckBox5.Name = "zone1EnableCheckBox5";
+            this.zone1EnableCheckBox5.Size = new System.Drawing.Size(15, 14);
+            this.zone1EnableCheckBox5.TabIndex = 0;
+            this.zone1EnableCheckBox5.UseVisualStyleBackColor = true;
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.label19);
-            this.groupBox14.Controls.Add(this.label20);
-            this.groupBox14.Controls.Add(this.numericUpDown3);
-            this.groupBox14.Controls.Add(this.numericUpDown4);
+            this.groupBox14.Controls.Add(this.zone1NumericUpDown3);
+            this.groupBox14.Controls.Add(this.Zone2umericUpDown4);
             this.groupBox14.Location = new System.Drawing.Point(106, 19);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(105, 83);
@@ -921,37 +1374,61 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Desired Pressure";
             // 
-            // label19
+            // zone1NumericUpDown3
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(76, 47);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(31, 13);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "mBar";
+            this.zone1NumericUpDown3.DecimalPlaces = 5;
+            this.zone1NumericUpDown3.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+            this.zone1NumericUpDown3.Location = new System.Drawing.Point(10, 21);
+            this.zone1NumericUpDown3.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.zone1NumericUpDown3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+            this.zone1NumericUpDown3.Name = "zone1NumericUpDown3";
+            this.zone1NumericUpDown3.Size = new System.Drawing.Size(63, 20);
+            this.zone1NumericUpDown3.TabIndex = 2;
+            this.zone1NumericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             // 
-            // label20
+            // Zone2umericUpDown4
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(74, 23);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 13);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "mBar";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(10, 21);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(63, 20);
-            this.numericUpDown3.TabIndex = 2;
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(10, 45);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(63, 20);
-            this.numericUpDown4.TabIndex = 4;
+            this.Zone2umericUpDown4.DecimalPlaces = 5;
+            this.Zone2umericUpDown4.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+            this.Zone2umericUpDown4.Location = new System.Drawing.Point(10, 45);
+            this.Zone2umericUpDown4.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Zone2umericUpDown4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            327680});
+            this.Zone2umericUpDown4.Name = "Zone2umericUpDown4";
+            this.Zone2umericUpDown4.Size = new System.Drawing.Size(63, 20);
+            this.Zone2umericUpDown4.TabIndex = 4;
+            this.Zone2umericUpDown4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             // 
             // groupBox15
             // 
@@ -1365,6 +1842,105 @@
             this.GODs_Eye.Text = "God\'s Eye";
             this.GODs_Eye.UseVisualStyleBackColor = true;
             // 
+            // groupBox23
+            // 
+            this.groupBox23.Controls.Add(this.label52);
+            this.groupBox23.Controls.Add(this.heaterSetLabel3);
+            this.groupBox23.Controls.Add(this.label54);
+            this.groupBox23.Controls.Add(this.label40);
+            this.groupBox23.Controls.Add(this.heaterSetLabel2);
+            this.groupBox23.Controls.Add(this.label46);
+            this.groupBox23.Controls.Add(this.heaterSetLabel1);
+            this.groupBox23.Controls.Add(this.label50);
+            this.groupBox23.Controls.Add(this.label51);
+            this.groupBox23.Location = new System.Drawing.Point(203, 172);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(277, 109);
+            this.groupBox23.TabIndex = 13;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "Current Settings";
+            // 
+            // heaterSetLabel2
+            // 
+            this.heaterSetLabel2.AutoSize = true;
+            this.heaterSetLabel2.Location = new System.Drawing.Point(81, 55);
+            this.heaterSetLabel2.Name = "heaterSetLabel2";
+            this.heaterSetLabel2.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel2.TabIndex = 10;
+            this.heaterSetLabel2.Text = "18.0";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(115, 32);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(47, 13);
+            this.label46.TabIndex = 19;
+            this.label46.Text = "Degrees";
+            // 
+            // heaterSetLabel1
+            // 
+            this.heaterSetLabel1.AutoSize = true;
+            this.heaterSetLabel1.Location = new System.Drawing.Point(81, 32);
+            this.heaterSetLabel1.Name = "heaterSetLabel1";
+            this.heaterSetLabel1.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel1.TabIndex = 9;
+            this.heaterSetLabel1.Text = "18.0";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(23, 55);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(51, 13);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Heater 2:";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(23, 32);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(51, 13);
+            this.label51.TabIndex = 0;
+            this.label51.Text = "Heater 1:";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(115, 55);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(47, 13);
+            this.label40.TabIndex = 20;
+            this.label40.Text = "Degrees";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(115, 81);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(47, 13);
+            this.label52.TabIndex = 23;
+            this.label52.Text = "Degrees";
+            // 
+            // heaterSetLabel3
+            // 
+            this.heaterSetLabel3.AutoSize = true;
+            this.heaterSetLabel3.Location = new System.Drawing.Point(81, 81);
+            this.heaterSetLabel3.Name = "heaterSetLabel3";
+            this.heaterSetLabel3.Size = new System.Drawing.Size(28, 13);
+            this.heaterSetLabel3.TabIndex = 22;
+            this.heaterSetLabel3.Text = "18.0";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(23, 81);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(51, 13);
+            this.label54.TabIndex = 21;
+            this.label54.Text = "Heater 3:";
+            // 
             // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1395,11 +1971,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.HeaterConfigPictureBox1)).EndInit();
             this.Voltage.ResumeLayout(false);
             this.Voltage.PerformLayout();
+            this.groupBox22.ResumeLayout(false);
+            this.groupBox22.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown1)).EndInit();
@@ -1410,13 +1989,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).EndInit();
             this.Pressure.ResumeLayout(false);
             this.Pressure.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zone1NumericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Zone2umericUpDown4)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1433,6 +2013,8 @@
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).EndInit();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1506,16 +2088,16 @@
         private System.Windows.Forms.CheckBox pressureControlCheckBox;
         private System.Windows.Forms.CheckBox VoltageControlCheckBox;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ResetZonePressureButton1;
+        private System.Windows.Forms.Button SetZonePressureButton2;
         private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox zone2EnableCheckBox4;
+        private System.Windows.Forms.CheckBox zone1EnableCheckBox5;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown zone1NumericUpDown3;
+        private System.Windows.Forms.NumericUpDown Zone2umericUpDown4;
         private System.Windows.Forms.GroupBox groupBox15;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
@@ -1552,6 +2134,44 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.Label zone2SetLabel;
+        private System.Windows.Forms.Label zone1SetLabel;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.GroupBox groupBox22;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label PSUSetVoltLabel6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label PSUSetVoltLabel5;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label PSUSetVoltLabel4;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label PSUSetVoltLabel3;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label PSUSetVoltLabel2;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label PSUSetVoltLabel1;
+        private System.Windows.Forms.CheckBox VoltCheckBox6;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.NumericUpDown voltNumericUpDown6;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.GroupBox groupBox23;
+        private System.Windows.Forms.Label heaterSetLabel2;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label heaterSetLabel1;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label heaterSetLabel3;
+        private System.Windows.Forms.Label label54;
     }
 }
 

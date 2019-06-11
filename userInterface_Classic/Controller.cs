@@ -28,17 +28,13 @@ namespace userInterface_Classic
 
         }
 
+
+        //Positioning Tab Begin
+
         private void XaxisTrackBar_Scroll(object sender, EventArgs e)
         {
             XaxisNumericUpDown1.Value = XaxisTrackBar.Value / 1000;
         }
-
-
-
-
-
-
-        //Positioning Tab Begin
         private void XaxisNumericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             XaxisTrackBar.Value = (int)(XaxisNumericUpDown1.Value * 1000);
@@ -95,6 +91,98 @@ namespace userInterface_Classic
         {
 
         }
+
+
         //Positioning Tab End
+
+
+        //Pressure Tab Begin
+
+        private void SetZonePressureButton2_Click(object sender, EventArgs e)
+        {
+            if (zone1EnableCheckBox5.Checked)
+            {
+                zone1SetLabel.Text = zone1NumericUpDown3.Value.ToString();
+            }
+            if (zone2EnableCheckBox4.Checked)
+            {
+                zone2SetLabel.Text = Zone2umericUpDown4.Value.ToString();
+            }
+        }
+
+        private void ResetZonePressureButton1_Click(object sender, EventArgs e)
+        {
+            Zone2umericUpDown4.Value = zone1NumericUpDown3.Value = 0;
+            zone1SetLabel.Text = zone1NumericUpDown3.Value.ToString();
+            zone2SetLabel.Text = Zone2umericUpDown4.Value.ToString();
+        }
+        //Pressure Tab End
+
+        //Voltage Tab Begin
+
+        private void VoltageSetButton_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox1.Checked)
+            {
+                PSUSetVoltLabel1.Text = voltNumericUpDown1.Value.ToString();
+            }
+            if (VoltCheckBox2.Checked)
+            {
+                PSUSetVoltLabel2.Text = voltNumericUpDown2.Value.ToString();
+            }
+            if (VoltCheckBox3.Checked)
+            {
+                PSUSetVoltLabel3.Text = voltNumericUpDown3.Value.ToString();
+            }
+            if (VoltCheckBox4.Checked)
+            {
+                PSUSetVoltLabel4.Text = voltNumericUpDown4.Value.ToString();
+            }
+            if (VoltCheckBox5.Checked)
+            {
+                PSUSetVoltLabel5.Text = voltNumericUpDown5.Value.ToString();
+            }
+            if (VoltCheckBox6.Checked)
+            {
+                PSUSetVoltLabel6.Text = voltNumericUpDown6.Value.ToString();
+            }
+
+        }
+
+        private void VoltageResetButton_Click(object sender, EventArgs e)
+        {
+            voltNumericUpDown1.Value = voltNumericUpDown2.Value = voltNumericUpDown3.Value = voltNumericUpDown4.Value = voltNumericUpDown5.Value = voltNumericUpDown6.Value = 0;
+            PSUSetVoltLabel1.Text = PSUSetVoltLabel2.Text = PSUSetVoltLabel3.Text = PSUSetVoltLabel4.Text = PSUSetVoltLabel5.Text = PSUSetVoltLabel6.Text = "0.000";
+        }
+
+
+        //Voltage Tab End
+
+        //Temperature Tab Begin
+
+        private void SetTemperatureButton_Click(object sender, EventArgs e)
+        {
+            if (heater1EnablecheckBox.Checked)
+            {
+                heaterSetLabel1.Text = heater1TempNumericUpDown.Value.ToString("0.0");
+            }
+            if (heater2EnablecheckBox.Checked)
+            {
+                heaterSetLabel2.Text = heater2TempNumericUpDown.Value.ToString("0.0");
+            }
+            if (heater3EnablecheckBox.Checked)
+            {
+                heaterSetLabel3.Text = heater3TempNumericUpDown.Value.ToString("0.0");
+            }
+        }
+
+        private void ResetTemperatureButton_Click(object sender, EventArgs e)
+        {
+            heater3TempNumericUpDown.Value = heater1TempNumericUpDown.Value = heater2TempNumericUpDown.Value = (decimal)18.0;
+            heaterSetLabel1.Text = heaterSetLabel2.Text = heaterSetLabel3.Text = "18.0";
+        }
+
+        //Temperature Tab End
+
     }
 }
