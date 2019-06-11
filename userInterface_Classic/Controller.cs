@@ -8,14 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
+
+
 namespace userInterface_Classic
 {
     public partial class Controller : Form
     {
+
+
+        bool temperatureEnabled = false;
+        bool voltageEnabled = false;
+        bool pressureEnabled = false;
+        bool positionEnabled = false;
+
+
+
         public Controller()
         {
             InitializeComponent();
+            UpdateViews();
         }
+
+
 
 
         private void Voltage_Click(object sender, EventArgs e)
@@ -184,5 +201,45 @@ namespace userInterface_Classic
 
         //Temperature Tab End
 
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (VoltageControlCheckBox.Checked)
+            {
+                voltageEnabled = true;
+            }
+            if (pressureControlCheckBox.Checked)
+            {
+                pressureEnabled = true;
+            }
+
+            if (positionControlCheckBox.Checked)
+            {
+                positionEnabled = true;
+            }
+
+            if (TemperaureControlCheckBox.Checked)
+            {
+                temperatureEnabled = true;
+            }
+
+            UpdateViews();
+        }
+
+
+        void UpdateViews()
+        {
+            ((Control)this.Temperature).Enabled = temperatureEnabled;
+            ((Control)this.Pressure).Enabled = pressureEnabled;
+            ((Control)this.Voltage).Enabled = voltageEnabled;
+            ((Control)this.Positioning).Enabled = positionEnabled;
+        }
+
+        void DisableAll()
+        {
+            ((Control)this.Temperature).Enabled = false;
+            ((Control)this.Pressure).Enabled = false;
+            ((Control)this.Voltage).Enabled = false;
+            ((Control)this.Positioning).Enabled = false;
+        }
     }
 }
