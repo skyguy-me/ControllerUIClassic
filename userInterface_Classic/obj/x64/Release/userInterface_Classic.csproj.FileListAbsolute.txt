@@ -1,0 +1,9 @@
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\bin\x64\Release\userInterface_Classic.exe.config
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\bin\x64\Release\userInterface_Classic.exe
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\bin\x64\Release\userInterface_Classic.pdb
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.Form1.resources
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.Properties.Resources.resources
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.csproj.GenerateResource.cache
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.csproj.CoreCompileInputs.cache
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.exe
+C:\Users\e0310994\Developer\VS2019\Common\Controller\interfacePC\userInterface_Classic\userInterface_Classic\obj\x64\Release\userInterface_Classic.pdb
