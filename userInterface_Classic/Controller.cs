@@ -207,19 +207,35 @@ namespace userInterface_Classic
             {
                 voltageEnabled = true;
             }
+            else
+            {
+                voltageEnabled = false;
+            }
             if (pressureControlCheckBox.Checked)
             {
                 pressureEnabled = true;
+            }
+            else
+            {
+                pressureEnabled = false;
             }
 
             if (positionControlCheckBox.Checked)
             {
                 positionEnabled = true;
             }
+            else
+            {
+                positionEnabled = false;
+            }
 
             if (TemperaureControlCheckBox.Checked)
             {
                 temperatureEnabled = true;
+            }
+            else
+            {
+                temperatureEnabled = false;
             }
 
             UpdateViews();
