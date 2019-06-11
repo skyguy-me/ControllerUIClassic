@@ -147,6 +147,7 @@
             this.Configuration.TabIndex = 0;
             this.Configuration.Text = "Configuration";
             this.Configuration.UseVisualStyleBackColor = true;
+            this.Configuration.Click += new System.EventHandler(this.Configuration_Click);
             // 
             // groupBox3
             // 
