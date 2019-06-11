@@ -36,6 +36,7 @@
             this.ledCheckBox2 = new System.Windows.Forms.CheckBox();
             this.ledCheckBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.positionControlCheckBox = new System.Windows.Forms.CheckBox();
             this.TemperaureControlCheckBox = new System.Windows.Forms.CheckBox();
             this.pressureControlCheckBox = new System.Windows.Forms.CheckBox();
@@ -92,8 +93,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.VoltpictureBox1 = new System.Windows.Forms.PictureBox();
             this.Pressure = new System.Windows.Forms.TabPage();
-            this.Positioning = new System.Windows.Forms.TabPage();
-            this.GODs_Eye = new System.Windows.Forms.TabPage();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -110,37 +109,38 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.XaxisNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.XaxisSetButton = new System.Windows.Forms.Button();
+            this.Positioning = new System.Windows.Forms.TabPage();
+            this.initializeButton4 = new System.Windows.Forms.Button();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.curentPositionStage3Ylabel = new System.Windows.Forms.Label();
+            this.curentPositionStage2Ylabel = new System.Windows.Forms.Label();
+            this.curentPositionStage1Ylabel = new System.Windows.Forms.Label();
+            this.curentPositionStage3Xlabel = new System.Windows.Forms.Label();
+            this.curentPositionStage2Xlabel = new System.Windows.Forms.Label();
+            this.curentPositionStage1Xlabel = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.Stage3radioButton = new System.Windows.Forms.RadioButton();
+            this.Stage2radioButton = new System.Windows.Forms.RadioButton();
+            this.Stage1radioButton = new System.Windows.Forms.RadioButton();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.YaxisSetButton = new System.Windows.Forms.Button();
             this.YaxisNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.YaxisTrackBar = new System.Windows.Forms.TrackBar();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.Stage1radioButton = new System.Windows.Forms.RadioButton();
-            this.Stage2radioButton = new System.Windows.Forms.RadioButton();
-            this.Stage3radioButton = new System.Windows.Forms.RadioButton();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.curentPositionStage1Xlabel = new System.Windows.Forms.Label();
-            this.curentPositionStage2Xlabel = new System.Windows.Forms.Label();
-            this.curentPositionStage3Xlabel = new System.Windows.Forms.Label();
-            this.curentPositionStage1Ylabel = new System.Windows.Forms.Label();
-            this.curentPositionStage2Ylabel = new System.Windows.Forms.Label();
-            this.curentPositionStage3Ylabel = new System.Windows.Forms.Label();
-            this.initializeButton4 = new System.Windows.Forms.Button();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.XaxisSetButton = new System.Windows.Forms.Button();
+            this.XaxisNumericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
+            this.GODs_Eye = new System.Windows.Forms.TabPage();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -167,7 +167,6 @@
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).BeginInit();
             this.Pressure.SuspendLayout();
-            this.Positioning.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox14.SuspendLayout();
@@ -175,14 +174,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).BeginInit();
-            this.groupBox16.SuspendLayout();
+            this.Positioning.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox19.SuspendLayout();
             this.groupBox17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YaxisNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.YaxisTrackBar)).BeginInit();
-            this.groupBox19.SuspendLayout();
-            this.groupBox20.SuspendLayout();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabController
@@ -193,7 +193,7 @@
             this.mainTabController.Controls.Add(this.Pressure);
             this.mainTabController.Controls.Add(this.Positioning);
             this.mainTabController.Controls.Add(this.GODs_Eye);
-            this.mainTabController.Location = new System.Drawing.Point(0, -2);
+            this.mainTabController.Location = new System.Drawing.Point(2, -2);
             this.mainTabController.Name = "mainTabController";
             this.mainTabController.SelectedIndex = 0;
             this.mainTabController.Size = new System.Drawing.Size(508, 324);
@@ -291,6 +291,15 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Process Control";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(20, 83);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(172, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Enable";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // positionControlCheckBox
             // 
@@ -838,29 +847,6 @@
             this.Pressure.Text = "Pressure";
             this.Pressure.UseVisualStyleBackColor = true;
             // 
-            // Positioning
-            // 
-            this.Positioning.Controls.Add(this.initializeButton4);
-            this.Positioning.Controls.Add(this.groupBox20);
-            this.Positioning.Controls.Add(this.groupBox19);
-            this.Positioning.Controls.Add(this.groupBox17);
-            this.Positioning.Controls.Add(this.groupBox16);
-            this.Positioning.Location = new System.Drawing.Point(4, 22);
-            this.Positioning.Name = "Positioning";
-            this.Positioning.Size = new System.Drawing.Size(500, 298);
-            this.Positioning.TabIndex = 4;
-            this.Positioning.Text = "Positioning";
-            this.Positioning.UseVisualStyleBackColor = true;
-            // 
-            // GODs_Eye
-            // 
-            this.GODs_Eye.Location = new System.Drawing.Point(4, 22);
-            this.GODs_Eye.Name = "GODs_Eye";
-            this.GODs_Eye.Size = new System.Drawing.Size(500, 298);
-            this.GODs_Eye.TabIndex = 5;
-            this.GODs_Eye.Text = "God\'s Eye";
-            this.GODs_Eye.UseVisualStyleBackColor = true;
-            // 
             // groupBox12
             // 
             this.groupBox12.Controls.Add(this.button1);
@@ -1015,73 +1001,232 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // Positioning
             // 
-            this.button3.Location = new System.Drawing.Point(20, 83);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Enable";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Positioning.Controls.Add(this.initializeButton4);
+            this.Positioning.Controls.Add(this.groupBox20);
+            this.Positioning.Controls.Add(this.groupBox19);
+            this.Positioning.Controls.Add(this.groupBox17);
+            this.Positioning.Controls.Add(this.groupBox16);
+            this.Positioning.Location = new System.Drawing.Point(4, 22);
+            this.Positioning.Name = "Positioning";
+            this.Positioning.Size = new System.Drawing.Size(500, 298);
+            this.Positioning.TabIndex = 4;
+            this.Positioning.Text = "Positioning";
+            this.Positioning.UseVisualStyleBackColor = true;
             // 
-            // XaxisNumericUpDown1
+            // initializeButton4
             // 
-            this.XaxisNumericUpDown1.DecimalPlaces = 3;
-            this.XaxisNumericUpDown1.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            196608});
-            this.XaxisNumericUpDown1.Location = new System.Drawing.Point(302, 44);
-            this.XaxisNumericUpDown1.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.XaxisNumericUpDown1.Minimum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            -2147483648});
-            this.XaxisNumericUpDown1.Name = "XaxisNumericUpDown1";
-            this.XaxisNumericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.XaxisNumericUpDown1.TabIndex = 3;
-            this.XaxisNumericUpDown1.ValueChanged += new System.EventHandler(this.XaxisNumericUpDown1_ValueChanged);
+            this.initializeButton4.Location = new System.Drawing.Point(405, 267);
+            this.initializeButton4.Name = "initializeButton4";
+            this.initializeButton4.Size = new System.Drawing.Size(75, 23);
+            this.initializeButton4.TabIndex = 8;
+            this.initializeButton4.Text = "Initialize";
+            this.initializeButton4.UseVisualStyleBackColor = true;
+            this.initializeButton4.Click += new System.EventHandler(this.InitializeButton4_Click);
             // 
-            // XaxisTrackBar
+            // groupBox20
             // 
-            this.XaxisTrackBar.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.XaxisTrackBar.Location = new System.Drawing.Point(6, 19);
-            this.XaxisTrackBar.Maximum = 20000;
-            this.XaxisTrackBar.Minimum = -20000;
-            this.XaxisTrackBar.Name = "XaxisTrackBar";
-            this.XaxisTrackBar.Size = new System.Drawing.Size(290, 45);
-            this.XaxisTrackBar.TabIndex = 2;
-            this.XaxisTrackBar.TickFrequency = 5000;
-            this.XaxisTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.XaxisTrackBar.Scroll += new System.EventHandler(this.XaxisTrackBar_Scroll);
+            this.groupBox20.Controls.Add(this.curentPositionStage3Ylabel);
+            this.groupBox20.Controls.Add(this.curentPositionStage2Ylabel);
+            this.groupBox20.Controls.Add(this.curentPositionStage1Ylabel);
+            this.groupBox20.Controls.Add(this.curentPositionStage3Xlabel);
+            this.groupBox20.Controls.Add(this.curentPositionStage2Xlabel);
+            this.groupBox20.Controls.Add(this.curentPositionStage1Xlabel);
+            this.groupBox20.Controls.Add(this.label28);
+            this.groupBox20.Controls.Add(this.label29);
+            this.groupBox20.Controls.Add(this.label23);
+            this.groupBox20.Controls.Add(this.label27);
+            this.groupBox20.Controls.Add(this.label22);
+            this.groupBox20.Controls.Add(this.label21);
+            this.groupBox20.Controls.Add(this.label18);
+            this.groupBox20.Controls.Add(this.label17);
+            this.groupBox20.Controls.Add(this.label16);
+            this.groupBox20.Location = new System.Drawing.Point(141, 165);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(342, 96);
+            this.groupBox20.TabIndex = 7;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Current Settings";
             // 
-            // groupBox16
+            // curentPositionStage3Ylabel
             // 
-            this.groupBox16.Controls.Add(this.XaxisSetButton);
-            this.groupBox16.Controls.Add(this.XaxisNumericUpDown1);
-            this.groupBox16.Controls.Add(this.XaxisTrackBar);
-            this.groupBox16.Location = new System.Drawing.Point(17, 15);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(463, 71);
-            this.groupBox16.TabIndex = 4;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "X-Axis";
+            this.curentPositionStage3Ylabel.AutoSize = true;
+            this.curentPositionStage3Ylabel.Location = new System.Drawing.Point(264, 72);
+            this.curentPositionStage3Ylabel.Name = "curentPositionStage3Ylabel";
+            this.curentPositionStage3Ylabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage3Ylabel.TabIndex = 14;
+            this.curentPositionStage3Ylabel.Text = "0";
             // 
-            // XaxisSetButton
+            // curentPositionStage2Ylabel
             // 
-            this.XaxisSetButton.Location = new System.Drawing.Point(303, 19);
-            this.XaxisSetButton.Name = "XaxisSetButton";
-            this.XaxisSetButton.Size = new System.Drawing.Size(75, 23);
-            this.XaxisSetButton.TabIndex = 4;
-            this.XaxisSetButton.Text = "Set";
-            this.XaxisSetButton.UseVisualStyleBackColor = true;
-            this.XaxisSetButton.Click += new System.EventHandler(this.XaxisSetButton_Click);
+            this.curentPositionStage2Ylabel.AutoSize = true;
+            this.curentPositionStage2Ylabel.Location = new System.Drawing.Point(264, 48);
+            this.curentPositionStage2Ylabel.Name = "curentPositionStage2Ylabel";
+            this.curentPositionStage2Ylabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage2Ylabel.TabIndex = 13;
+            this.curentPositionStage2Ylabel.Text = "0";
+            // 
+            // curentPositionStage1Ylabel
+            // 
+            this.curentPositionStage1Ylabel.AutoSize = true;
+            this.curentPositionStage1Ylabel.Location = new System.Drawing.Point(264, 19);
+            this.curentPositionStage1Ylabel.Name = "curentPositionStage1Ylabel";
+            this.curentPositionStage1Ylabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage1Ylabel.TabIndex = 12;
+            this.curentPositionStage1Ylabel.Text = "0";
+            // 
+            // curentPositionStage3Xlabel
+            // 
+            this.curentPositionStage3Xlabel.AutoSize = true;
+            this.curentPositionStage3Xlabel.Location = new System.Drawing.Point(139, 72);
+            this.curentPositionStage3Xlabel.Name = "curentPositionStage3Xlabel";
+            this.curentPositionStage3Xlabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage3Xlabel.TabIndex = 11;
+            this.curentPositionStage3Xlabel.Text = "0";
+            // 
+            // curentPositionStage2Xlabel
+            // 
+            this.curentPositionStage2Xlabel.AutoSize = true;
+            this.curentPositionStage2Xlabel.Location = new System.Drawing.Point(139, 48);
+            this.curentPositionStage2Xlabel.Name = "curentPositionStage2Xlabel";
+            this.curentPositionStage2Xlabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage2Xlabel.TabIndex = 10;
+            this.curentPositionStage2Xlabel.Text = "0";
+            // 
+            // curentPositionStage1Xlabel
+            // 
+            this.curentPositionStage1Xlabel.AutoSize = true;
+            this.curentPositionStage1Xlabel.Location = new System.Drawing.Point(139, 19);
+            this.curentPositionStage1Xlabel.Name = "curentPositionStage1Xlabel";
+            this.curentPositionStage1Xlabel.Size = new System.Drawing.Size(13, 13);
+            this.curentPositionStage1Xlabel.TabIndex = 9;
+            this.curentPositionStage1Xlabel.Text = "0";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(241, 72);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(17, 13);
+            this.label28.TabIndex = 8;
+            this.label28.Text = "Y:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(115, 72);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(17, 13);
+            this.label29.TabIndex = 7;
+            this.label29.Text = "X:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(241, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(17, 13);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "Y:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(115, 48);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(17, 13);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "X:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(241, 20);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(17, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "Y:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(115, 20);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(17, 13);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "X:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(23, 72);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(44, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Stage 3";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(23, 46);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(44, 13);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Stage 2";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(23, 20);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(44, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Stage 1";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.Stage3radioButton);
+            this.groupBox19.Controls.Add(this.Stage2radioButton);
+            this.groupBox19.Controls.Add(this.Stage1radioButton);
+            this.groupBox19.Location = new System.Drawing.Point(20, 162);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(112, 96);
+            this.groupBox19.TabIndex = 6;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Stage";
+            // 
+            // Stage3radioButton
+            // 
+            this.Stage3radioButton.AutoSize = true;
+            this.Stage3radioButton.Location = new System.Drawing.Point(17, 68);
+            this.Stage3radioButton.Name = "Stage3radioButton";
+            this.Stage3radioButton.Size = new System.Drawing.Size(62, 17);
+            this.Stage3radioButton.TabIndex = 2;
+            this.Stage3radioButton.Text = "Stage 3";
+            this.Stage3radioButton.UseVisualStyleBackColor = true;
+            // 
+            // Stage2radioButton
+            // 
+            this.Stage2radioButton.AutoSize = true;
+            this.Stage2radioButton.Location = new System.Drawing.Point(17, 44);
+            this.Stage2radioButton.Name = "Stage2radioButton";
+            this.Stage2radioButton.Size = new System.Drawing.Size(62, 17);
+            this.Stage2radioButton.TabIndex = 1;
+            this.Stage2radioButton.Text = "Stage 2";
+            this.Stage2radioButton.UseVisualStyleBackColor = true;
+            // 
+            // Stage1radioButton
+            // 
+            this.Stage1radioButton.AutoSize = true;
+            this.Stage1radioButton.Checked = true;
+            this.Stage1radioButton.Location = new System.Drawing.Point(17, 20);
+            this.Stage1radioButton.Name = "Stage1radioButton";
+            this.Stage1radioButton.Size = new System.Drawing.Size(62, 17);
+            this.Stage1radioButton.TabIndex = 0;
+            this.Stage1radioButton.TabStop = true;
+            this.Stage1radioButton.Text = "Stage 1";
+            this.Stage1radioButton.UseVisualStyleBackColor = true;
             // 
             // groupBox17
             // 
@@ -1095,6 +1240,15 @@
             this.groupBox17.TabIndex = 5;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Y-Axis";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Location = new System.Drawing.Point(0, 87);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(85, 96);
+            this.groupBox18.TabIndex = 6;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Stage";
             // 
             // YaxisSetButton
             // 
@@ -1143,227 +1297,73 @@
             this.YaxisTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.YaxisTrackBar.Scroll += new System.EventHandler(this.YaxisTrackBar_Scroll);
             // 
-            // groupBox18
+            // groupBox16
             // 
-            this.groupBox18.Location = new System.Drawing.Point(0, 87);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(85, 96);
-            this.groupBox18.TabIndex = 6;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Stage";
+            this.groupBox16.Controls.Add(this.XaxisSetButton);
+            this.groupBox16.Controls.Add(this.XaxisNumericUpDown1);
+            this.groupBox16.Controls.Add(this.XaxisTrackBar);
+            this.groupBox16.Location = new System.Drawing.Point(17, 15);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(463, 71);
+            this.groupBox16.TabIndex = 4;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "X-Axis";
             // 
-            // groupBox19
+            // XaxisSetButton
             // 
-            this.groupBox19.Controls.Add(this.Stage3radioButton);
-            this.groupBox19.Controls.Add(this.Stage2radioButton);
-            this.groupBox19.Controls.Add(this.Stage1radioButton);
-            this.groupBox19.Location = new System.Drawing.Point(20, 162);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(112, 96);
-            this.groupBox19.TabIndex = 6;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Stage";
+            this.XaxisSetButton.Location = new System.Drawing.Point(303, 19);
+            this.XaxisSetButton.Name = "XaxisSetButton";
+            this.XaxisSetButton.Size = new System.Drawing.Size(75, 23);
+            this.XaxisSetButton.TabIndex = 4;
+            this.XaxisSetButton.Text = "Set";
+            this.XaxisSetButton.UseVisualStyleBackColor = true;
+            this.XaxisSetButton.Click += new System.EventHandler(this.XaxisSetButton_Click);
             // 
-            // Stage1radioButton
+            // XaxisNumericUpDown1
             // 
-            this.Stage1radioButton.AutoSize = true;
-            this.Stage1radioButton.Checked = true;
-            this.Stage1radioButton.Location = new System.Drawing.Point(17, 20);
-            this.Stage1radioButton.Name = "Stage1radioButton";
-            this.Stage1radioButton.Size = new System.Drawing.Size(62, 17);
-            this.Stage1radioButton.TabIndex = 0;
-            this.Stage1radioButton.TabStop = true;
-            this.Stage1radioButton.Text = "Stage 1";
-            this.Stage1radioButton.UseVisualStyleBackColor = true;
+            this.XaxisNumericUpDown1.DecimalPlaces = 3;
+            this.XaxisNumericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            196608});
+            this.XaxisNumericUpDown1.Location = new System.Drawing.Point(302, 44);
+            this.XaxisNumericUpDown1.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.XaxisNumericUpDown1.Minimum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            -2147483648});
+            this.XaxisNumericUpDown1.Name = "XaxisNumericUpDown1";
+            this.XaxisNumericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.XaxisNumericUpDown1.TabIndex = 3;
+            this.XaxisNumericUpDown1.ValueChanged += new System.EventHandler(this.XaxisNumericUpDown1_ValueChanged);
             // 
-            // Stage2radioButton
+            // XaxisTrackBar
             // 
-            this.Stage2radioButton.AutoSize = true;
-            this.Stage2radioButton.Location = new System.Drawing.Point(17, 44);
-            this.Stage2radioButton.Name = "Stage2radioButton";
-            this.Stage2radioButton.Size = new System.Drawing.Size(62, 17);
-            this.Stage2radioButton.TabIndex = 1;
-            this.Stage2radioButton.Text = "Stage 2";
-            this.Stage2radioButton.UseVisualStyleBackColor = true;
+            this.XaxisTrackBar.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.XaxisTrackBar.Location = new System.Drawing.Point(6, 19);
+            this.XaxisTrackBar.Maximum = 20000;
+            this.XaxisTrackBar.Minimum = -20000;
+            this.XaxisTrackBar.Name = "XaxisTrackBar";
+            this.XaxisTrackBar.Size = new System.Drawing.Size(290, 45);
+            this.XaxisTrackBar.TabIndex = 2;
+            this.XaxisTrackBar.TickFrequency = 5000;
+            this.XaxisTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.XaxisTrackBar.Scroll += new System.EventHandler(this.XaxisTrackBar_Scroll);
             // 
-            // Stage3radioButton
+            // GODs_Eye
             // 
-            this.Stage3radioButton.AutoSize = true;
-            this.Stage3radioButton.Location = new System.Drawing.Point(17, 68);
-            this.Stage3radioButton.Name = "Stage3radioButton";
-            this.Stage3radioButton.Size = new System.Drawing.Size(62, 17);
-            this.Stage3radioButton.TabIndex = 2;
-            this.Stage3radioButton.Text = "Stage 3";
-            this.Stage3radioButton.UseVisualStyleBackColor = true;
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.curentPositionStage3Ylabel);
-            this.groupBox20.Controls.Add(this.curentPositionStage2Ylabel);
-            this.groupBox20.Controls.Add(this.curentPositionStage1Ylabel);
-            this.groupBox20.Controls.Add(this.curentPositionStage3Xlabel);
-            this.groupBox20.Controls.Add(this.curentPositionStage2Xlabel);
-            this.groupBox20.Controls.Add(this.curentPositionStage1Xlabel);
-            this.groupBox20.Controls.Add(this.label28);
-            this.groupBox20.Controls.Add(this.label29);
-            this.groupBox20.Controls.Add(this.label23);
-            this.groupBox20.Controls.Add(this.label27);
-            this.groupBox20.Controls.Add(this.label22);
-            this.groupBox20.Controls.Add(this.label21);
-            this.groupBox20.Controls.Add(this.label18);
-            this.groupBox20.Controls.Add(this.label17);
-            this.groupBox20.Controls.Add(this.label16);
-            this.groupBox20.Location = new System.Drawing.Point(141, 165);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(342, 96);
-            this.groupBox20.TabIndex = 7;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Current Settings";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(44, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Stage 1";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(23, 46);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(44, 13);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Stage 2";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(23, 72);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 13);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "Stage 3";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(115, 20);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(17, 13);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "X:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(241, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(17, 13);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "Y:";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(241, 48);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(17, 13);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "Y:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(115, 48);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(17, 13);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "X:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(241, 72);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(17, 13);
-            this.label28.TabIndex = 8;
-            this.label28.Text = "Y:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(115, 72);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(17, 13);
-            this.label29.TabIndex = 7;
-            this.label29.Text = "X:";
-            // 
-            // curentPositionStage1Xlabel
-            // 
-            this.curentPositionStage1Xlabel.AutoSize = true;
-            this.curentPositionStage1Xlabel.Location = new System.Drawing.Point(139, 19);
-            this.curentPositionStage1Xlabel.Name = "curentPositionStage1Xlabel";
-            this.curentPositionStage1Xlabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage1Xlabel.TabIndex = 9;
-            this.curentPositionStage1Xlabel.Text = "0";
-            // 
-            // curentPositionStage2Xlabel
-            // 
-            this.curentPositionStage2Xlabel.AutoSize = true;
-            this.curentPositionStage2Xlabel.Location = new System.Drawing.Point(139, 48);
-            this.curentPositionStage2Xlabel.Name = "curentPositionStage2Xlabel";
-            this.curentPositionStage2Xlabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage2Xlabel.TabIndex = 10;
-            this.curentPositionStage2Xlabel.Text = "0";
-            // 
-            // curentPositionStage3Xlabel
-            // 
-            this.curentPositionStage3Xlabel.AutoSize = true;
-            this.curentPositionStage3Xlabel.Location = new System.Drawing.Point(139, 72);
-            this.curentPositionStage3Xlabel.Name = "curentPositionStage3Xlabel";
-            this.curentPositionStage3Xlabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage3Xlabel.TabIndex = 11;
-            this.curentPositionStage3Xlabel.Text = "0";
-            // 
-            // curentPositionStage1Ylabel
-            // 
-            this.curentPositionStage1Ylabel.AutoSize = true;
-            this.curentPositionStage1Ylabel.Location = new System.Drawing.Point(264, 19);
-            this.curentPositionStage1Ylabel.Name = "curentPositionStage1Ylabel";
-            this.curentPositionStage1Ylabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage1Ylabel.TabIndex = 12;
-            this.curentPositionStage1Ylabel.Text = "0";
-            // 
-            // curentPositionStage2Ylabel
-            // 
-            this.curentPositionStage2Ylabel.AutoSize = true;
-            this.curentPositionStage2Ylabel.Location = new System.Drawing.Point(264, 48);
-            this.curentPositionStage2Ylabel.Name = "curentPositionStage2Ylabel";
-            this.curentPositionStage2Ylabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage2Ylabel.TabIndex = 13;
-            this.curentPositionStage2Ylabel.Text = "0";
-            // 
-            // curentPositionStage3Ylabel
-            // 
-            this.curentPositionStage3Ylabel.AutoSize = true;
-            this.curentPositionStage3Ylabel.Location = new System.Drawing.Point(264, 72);
-            this.curentPositionStage3Ylabel.Name = "curentPositionStage3Ylabel";
-            this.curentPositionStage3Ylabel.Size = new System.Drawing.Size(13, 13);
-            this.curentPositionStage3Ylabel.TabIndex = 14;
-            this.curentPositionStage3Ylabel.Text = "0";
-            // 
-            // initializeButton4
-            // 
-            this.initializeButton4.Location = new System.Drawing.Point(405, 267);
-            this.initializeButton4.Name = "initializeButton4";
-            this.initializeButton4.Size = new System.Drawing.Size(75, 23);
-            this.initializeButton4.TabIndex = 8;
-            this.initializeButton4.Text = "Initialize";
-            this.initializeButton4.UseVisualStyleBackColor = true;
-            this.initializeButton4.Click += new System.EventHandler(this.InitializeButton4_Click);
+            this.GODs_Eye.Location = new System.Drawing.Point(4, 22);
+            this.GODs_Eye.Name = "GODs_Eye";
+            this.GODs_Eye.Size = new System.Drawing.Size(500, 298);
+            this.GODs_Eye.TabIndex = 5;
+            this.GODs_Eye.Text = "God\'s Eye";
+            this.GODs_Eye.UseVisualStyleBackColor = true;
             // 
             // Controller
             // 
@@ -1410,7 +1410,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).EndInit();
             this.Pressure.ResumeLayout(false);
             this.Pressure.PerformLayout();
-            this.Positioning.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
@@ -1421,18 +1420,19 @@
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).EndInit();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
+            this.Positioning.ResumeLayout(false);
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.YaxisNumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.YaxisTrackBar)).EndInit();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).EndInit();
             this.ResumeLayout(false);
 
         }
