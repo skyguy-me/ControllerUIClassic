@@ -94,6 +94,23 @@
             this.Pressure = new System.Windows.Forms.TabPage();
             this.Positioning = new System.Windows.Forms.TabPage();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -119,6 +136,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.voltNumericUpDown3)).BeginInit();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).BeginInit();
+            this.Pressure.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainTabController
@@ -216,13 +241,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.positionControlCheckBox);
             this.groupBox2.Controls.Add(this.TemperaureControlCheckBox);
             this.groupBox2.Controls.Add(this.pressureControlCheckBox);
             this.groupBox2.Controls.Add(this.VoltageControlCheckBox);
             this.groupBox2.Location = new System.Drawing.Point(8, 102);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(207, 106);
+            this.groupBox2.Size = new System.Drawing.Size(207, 114);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Process Control";
@@ -763,6 +789,9 @@
             // 
             // Pressure
             // 
+            this.Pressure.Controls.Add(this.groupBox12);
+            this.Pressure.Controls.Add(this.label26);
+            this.Pressure.Controls.Add(this.pictureBox1);
             this.Pressure.Location = new System.Drawing.Point(4, 22);
             this.Pressure.Name = "Pressure";
             this.Pressure.Size = new System.Drawing.Size(500, 298);
@@ -787,6 +816,169 @@
             this.GODs_Eye.TabIndex = 5;
             this.GODs_Eye.Text = "God\'s Eye";
             this.GODs_Eye.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.button1);
+            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Controls.Add(this.groupBox13);
+            this.groupBox12.Controls.Add(this.groupBox14);
+            this.groupBox12.Controls.Add(this.groupBox15);
+            this.groupBox12.Location = new System.Drawing.Point(198, 3);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(277, 157);
+            this.groupBox12.TabIndex = 11;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Set Point";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(109, 121);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(190, 121);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Set";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.checkBox4);
+            this.groupBox13.Controls.Add(this.checkBox5);
+            this.groupBox13.Location = new System.Drawing.Point(210, 19);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(55, 83);
+            this.groupBox13.TabIndex = 14;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Enable";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(21, 45);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 1;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(21, 21);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 0;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.label19);
+            this.groupBox14.Controls.Add(this.label20);
+            this.groupBox14.Controls.Add(this.numericUpDown3);
+            this.groupBox14.Controls.Add(this.numericUpDown4);
+            this.groupBox14.Location = new System.Drawing.Point(106, 19);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(105, 83);
+            this.groupBox14.TabIndex = 13;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Desired Pressure";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(76, 47);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 13);
+            this.label19.TabIndex = 20;
+            this.label19.Text = "mBar";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(74, 23);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 13);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "mBar";
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(10, 21);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(63, 20);
+            this.numericUpDown3.TabIndex = 2;
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(10, 45);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(63, 20);
+            this.numericUpDown4.TabIndex = 4;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.label24);
+            this.groupBox15.Controls.Add(this.label25);
+            this.groupBox15.Location = new System.Drawing.Point(6, 19);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(104, 83);
+            this.groupBox15.TabIndex = 12;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Pressure Zone";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(53, 45);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Zone 2";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(53, 23);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 13);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Zone 1";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(24, 163);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(141, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Pressure Zone Configuration";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(8, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(184, 157);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(20, 83);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(172, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Enable";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Controller
             // 
@@ -831,6 +1023,18 @@
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.VoltpictureBox1)).EndInit();
+            this.Pressure.ResumeLayout(false);
+            this.Pressure.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -903,6 +1107,23 @@
         private System.Windows.Forms.CheckBox TemperaureControlCheckBox;
         private System.Windows.Forms.CheckBox pressureControlCheckBox;
         private System.Windows.Forms.CheckBox VoltageControlCheckBox;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
