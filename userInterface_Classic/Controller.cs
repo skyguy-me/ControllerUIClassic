@@ -3,9 +3,6 @@ using System.Windows.Forms;
 
 
 
-
-
-
 namespace userInterface_Classic
 {
     public partial class Controller : Form
