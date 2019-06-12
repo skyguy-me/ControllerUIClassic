@@ -182,6 +182,9 @@
             this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -232,6 +235,7 @@
             // 
             // mainTabController
             // 
+            this.mainTabController.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.mainTabController.Controls.Add(this.Configuration);
             this.mainTabController.Controls.Add(this.Temperature);
             this.mainTabController.Controls.Add(this.Voltage);
@@ -241,22 +245,24 @@
             this.mainTabController.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainTabController.ImageList = this.imageList1;
             this.mainTabController.Location = new System.Drawing.Point(0, 0);
+            this.mainTabController.Multiline = true;
             this.mainTabController.Name = "mainTabController";
             this.mainTabController.SelectedIndex = 0;
-            this.mainTabController.Size = new System.Drawing.Size(507, 322);
+            this.mainTabController.Size = new System.Drawing.Size(568, 337);
             this.mainTabController.TabIndex = 0;
             // 
             // Configuration
             // 
+            this.Configuration.AllowDrop = true;
             this.Configuration.BackColor = System.Drawing.Color.White;
             this.Configuration.Controls.Add(this.groupBox3);
             this.Configuration.Controls.Add(this.groupBox2);
             this.Configuration.Controls.Add(this.groupBox1);
             this.Configuration.ImageKey = "settings-512.png";
-            this.Configuration.Location = new System.Drawing.Point(4, 23);
+            this.Configuration.Location = new System.Drawing.Point(4, 26);
             this.Configuration.Name = "Configuration";
             this.Configuration.Padding = new System.Windows.Forms.Padding(3);
-            this.Configuration.Size = new System.Drawing.Size(499, 295);
+            this.Configuration.Size = new System.Drawing.Size(560, 307);
             this.Configuration.TabIndex = 0;
             this.Configuration.Text = "Configuration";
             this.Configuration.Click += new System.EventHandler(this.Configuration_Click);
@@ -431,15 +437,16 @@
             // Temperature
             // 
             this.Temperature.BackColor = System.Drawing.Color.White;
+            this.Temperature.Controls.Add(this.button4);
             this.Temperature.Controls.Add(this.groupBox23);
             this.Temperature.Controls.Add(this.groupBox4);
             this.Temperature.Controls.Add(this.label2);
             this.Temperature.Controls.Add(this.HeaterConfigPictureBox1);
             this.Temperature.ImageIndex = 3;
-            this.Temperature.Location = new System.Drawing.Point(4, 23);
+            this.Temperature.Location = new System.Drawing.Point(4, 26);
             this.Temperature.Name = "Temperature";
             this.Temperature.Padding = new System.Windows.Forms.Padding(3);
-            this.Temperature.Size = new System.Drawing.Size(499, 295);
+            this.Temperature.Size = new System.Drawing.Size(560, 307);
             this.Temperature.TabIndex = 1;
             this.Temperature.Text = "Temperature";
             // 
@@ -772,14 +779,15 @@
             // Voltage
             // 
             this.Voltage.BackColor = System.Drawing.Color.White;
+            this.Voltage.Controls.Add(this.button2);
             this.Voltage.Controls.Add(this.groupBox22);
             this.Voltage.Controls.Add(this.groupBox8);
             this.Voltage.Controls.Add(this.label6);
             this.Voltage.Controls.Add(this.VoltpictureBox1);
             this.Voltage.ImageIndex = 1;
-            this.Voltage.Location = new System.Drawing.Point(4, 23);
+            this.Voltage.Location = new System.Drawing.Point(4, 26);
             this.Voltage.Name = "Voltage";
-            this.Voltage.Size = new System.Drawing.Size(499, 295);
+            this.Voltage.Size = new System.Drawing.Size(560, 307);
             this.Voltage.TabIndex = 2;
             this.Voltage.Text = "Voltage";
             this.Voltage.Click += new System.EventHandler(this.Voltage_Click);
@@ -1325,14 +1333,15 @@
             // Pressure
             // 
             this.Pressure.BackColor = System.Drawing.Color.White;
+            this.Pressure.Controls.Add(this.button1);
             this.Pressure.Controls.Add(this.groupBox21);
             this.Pressure.Controls.Add(this.groupBox12);
             this.Pressure.Controls.Add(this.label26);
             this.Pressure.Controls.Add(this.pictureBox1);
             this.Pressure.ImageKey = "pressure-512.png";
-            this.Pressure.Location = new System.Drawing.Point(4, 23);
+            this.Pressure.Location = new System.Drawing.Point(4, 26);
             this.Pressure.Name = "Pressure";
-            this.Pressure.Size = new System.Drawing.Size(499, 295);
+            this.Pressure.Size = new System.Drawing.Size(560, 307);
             this.Pressure.TabIndex = 3;
             this.Pressure.Text = "Pressure";
             // 
@@ -1596,15 +1605,15 @@
             this.Positioning.Controls.Add(this.groupBox17);
             this.Positioning.Controls.Add(this.groupBox16);
             this.Positioning.ImageIndex = 0;
-            this.Positioning.Location = new System.Drawing.Point(4, 23);
+            this.Positioning.Location = new System.Drawing.Point(4, 26);
             this.Positioning.Name = "Positioning";
-            this.Positioning.Size = new System.Drawing.Size(499, 295);
+            this.Positioning.Size = new System.Drawing.Size(560, 307);
             this.Positioning.TabIndex = 4;
             this.Positioning.Text = "Positioning";
             // 
             // initializeButton4
             // 
-            this.initializeButton4.Location = new System.Drawing.Point(405, 267);
+            this.initializeButton4.Location = new System.Drawing.Point(478, 276);
             this.initializeButton4.Name = "initializeButton4";
             this.initializeButton4.Size = new System.Drawing.Size(75, 23);
             this.initializeButton4.TabIndex = 8;
@@ -1947,9 +1956,9 @@
             // 
             this.GODs_Eye.BackColor = System.Drawing.Color.White;
             this.GODs_Eye.ImageKey = "eye-of-god.jpg";
-            this.GODs_Eye.Location = new System.Drawing.Point(4, 23);
+            this.GODs_Eye.Location = new System.Drawing.Point(4, 26);
             this.GODs_Eye.Name = "GODs_Eye";
-            this.GODs_Eye.Size = new System.Drawing.Size(499, 295);
+            this.GODs_Eye.Size = new System.Drawing.Size(560, 307);
             this.GODs_Eye.TabIndex = 5;
             this.GODs_Eye.Text = "God\'s Eye";
             // 
@@ -1964,11 +1973,38 @@
             this.imageList1.Images.SetKeyName(4, "settings-512.png");
             this.imageList1.Images.SetKeyName(5, "eye-of-god.jpg");
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(478, 276);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Initialize";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(478, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Initialize";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(478, 276);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Initialize";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 322);
+            this.ClientSize = new System.Drawing.Size(568, 337);
             this.Controls.Add(this.mainTabController);
             this.Name = "Controller";
             this.Text = "Controller";
@@ -2196,6 +2232,9 @@
         private System.Windows.Forms.Label heaterSetLabel3;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
