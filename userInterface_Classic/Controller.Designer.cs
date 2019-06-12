@@ -252,7 +252,7 @@
             this.Configuration.Controls.Add(this.groupBox3);
             this.Configuration.Controls.Add(this.groupBox2);
             this.Configuration.Controls.Add(this.groupBox1);
-            this.Configuration.ImageIndex = 4;
+            this.Configuration.ImageKey = "settings-512.png";
             this.Configuration.Location = new System.Drawing.Point(4, 23);
             this.Configuration.Name = "Configuration";
             this.Configuration.Padding = new System.Windows.Forms.Padding(3);
@@ -1329,7 +1329,7 @@
             this.Pressure.Controls.Add(this.groupBox12);
             this.Pressure.Controls.Add(this.label26);
             this.Pressure.Controls.Add(this.pictureBox1);
-            this.Pressure.ImageIndex = 2;
+            this.Pressure.ImageKey = "pressure-512.png";
             this.Pressure.Location = new System.Drawing.Point(4, 23);
             this.Pressure.Name = "Pressure";
             this.Pressure.Size = new System.Drawing.Size(499, 295);
