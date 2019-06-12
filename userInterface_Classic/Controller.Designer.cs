@@ -1946,6 +1946,7 @@
             // GODs_Eye
             // 
             this.GODs_Eye.BackColor = System.Drawing.Color.White;
+            this.GODs_Eye.ImageKey = "eye-of-god.jpg";
             this.GODs_Eye.Location = new System.Drawing.Point(4, 23);
             this.GODs_Eye.Name = "GODs_Eye";
             this.GODs_Eye.Size = new System.Drawing.Size(499, 295);
@@ -1961,6 +1962,7 @@
             this.imageList1.Images.SetKeyName(2, "pressure-512.png");
             this.imageList1.Images.SetKeyName(3, "science-08-512.png");
             this.imageList1.Images.SetKeyName(4, "settings-512.png");
+            this.imageList1.Images.SetKeyName(5, "eye-of-god.jpg");
             // 
             // Controller
             // 
