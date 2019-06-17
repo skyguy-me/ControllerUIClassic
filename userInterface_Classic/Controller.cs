@@ -162,7 +162,6 @@ namespace userInterface_Classic
             PSUSetVoltLabel1.Text = PSUSetVoltLabel2.Text = PSUSetVoltLabel3.Text = PSUSetVoltLabel4.Text = PSUSetVoltLabel5.Text = PSUSetVoltLabel6.Text = "0.000";
         }
 
-
         //Voltage Tab End
 
         //Temperature Tab Begin
@@ -230,7 +229,6 @@ namespace userInterface_Classic
 
             UpdateViews();
         }
-
 
         void UpdateViews()
         {
