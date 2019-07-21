@@ -5,7 +5,7 @@ using System.IO.Ports;
 
 namespace userInterface_Classic
 {
-    //public partial class Controller : Form
+    public partial class Controller : Form
     {
 
 
@@ -161,22 +161,22 @@ namespace userInterface_Classic
             if (VoltCheckBox3.Checked)
             {
                 PSUSetVoltLabel3.Text = voltNumericUpDown3.Value.ToString();
-                sendS("#SVLT" + voltNumericUpDown3.Value.ToString() + "\n");
+                sendS("#SVT3" + voltNumericUpDown3.Value.ToString() + "\n");
             }
             if (VoltCheckBox4.Checked)
             {
                 PSUSetVoltLabel4.Text = voltNumericUpDown4.Value.ToString();
-                sendS("#SVLT" + voltNumericUpDown4.Value.ToString() + "\n");
+                sendS("#SVT4" + voltNumericUpDown4.Value.ToString() + "\n");
             }
             if (VoltCheckBox5.Checked)
             {
                 PSUSetVoltLabel5.Text = voltNumericUpDown5.Value.ToString();
-                sendS("#SVLT" + voltNumericUpDown5.Value.ToString() + "\n");
+                sendS("#SVT5" + voltNumericUpDown5.Value.ToString() + "\n");
             }
             if (VoltCheckBox6.Checked)
             {
                 PSUSetVoltLabel6.Text = voltNumericUpDown6.Value.ToString();
-                sendS("#SVLT" + voltNumericUpDown6.Value.ToString() + "\n");
+                sendS("#SVT6" + voltNumericUpDown6.Value.ToString() + "\n");
             }
 
         }
@@ -185,6 +185,7 @@ namespace userInterface_Classic
         {
             voltNumericUpDown1.Value = voltNumericUpDown2.Value = voltNumericUpDown3.Value = voltNumericUpDown4.Value = voltNumericUpDown5.Value = voltNumericUpDown6.Value = 0;
             PSUSetVoltLabel1.Text = PSUSetVoltLabel2.Text = PSUSetVoltLabel3.Text = PSUSetVoltLabel4.Text = PSUSetVoltLabel5.Text = PSUSetVoltLabel6.Text = "0.000";
+            sendS("#SVLT" + ((voltNumericUpDown1.Value) * 1000).ToString() + "\n");
         }
 
         //Voltage Tab End
