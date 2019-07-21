@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using System.IO.Ports;
 
 
 namespace userInterface_Classic
 {
-    public partial class Controller : Form
+    //public partial class Controller : Form
     {
 
 
@@ -14,15 +14,34 @@ namespace userInterface_Classic
         bool pressureEnabled = false;
         bool positionEnabled = false;
 
+        bool isConnected = false;
+        String[] ports;
+        SerialPort port;
 
 
         public Controller()
         {
             InitializeComponent();
+            GetAvailableComPorts();
             UpdateViews();
+
+            foreach (string port in ports)
+            {
+                portsComboBox.Items.Add(port);
+                Console.WriteLine(port);
+                if (ports[0] != null)
+                {
+                    portsComboBox.SelectedItem = ports[0];
+                }
+            }
+
         }
 
 
+        void GetAvailableComPorts()
+        {
+            ports = SerialPort.GetPortNames();
+        }
 
 
         private void Voltage_Click(object sender, EventArgs e)
@@ -131,26 +150,33 @@ namespace userInterface_Classic
             if (VoltCheckBox1.Checked)
             {
                 PSUSetVoltLabel1.Text = voltNumericUpDown1.Value.ToString();
+                sendS("#SVLT" + ((voltNumericUpDown1.Value)*1000).ToString() + "\n");
+
             }
             if (VoltCheckBox2.Checked)
             {
                 PSUSetVoltLabel2.Text = voltNumericUpDown2.Value.ToString();
+                sendS("#SVLT" + voltNumericUpDown2.Value.ToString() + "\n");
             }
             if (VoltCheckBox3.Checked)
             {
                 PSUSetVoltLabel3.Text = voltNumericUpDown3.Value.ToString();
+                sendS("#SVLT" + voltNumericUpDown3.Value.ToString() + "\n");
             }
             if (VoltCheckBox4.Checked)
             {
                 PSUSetVoltLabel4.Text = voltNumericUpDown4.Value.ToString();
+                sendS("#SVLT" + voltNumericUpDown4.Value.ToString() + "\n");
             }
             if (VoltCheckBox5.Checked)
             {
                 PSUSetVoltLabel5.Text = voltNumericUpDown5.Value.ToString();
+                sendS("#SVLT" + voltNumericUpDown5.Value.ToString() + "\n");
             }
             if (VoltCheckBox6.Checked)
             {
                 PSUSetVoltLabel6.Text = voltNumericUpDown6.Value.ToString();
+                sendS("#SVLT" + voltNumericUpDown6.Value.ToString() + "\n");
             }
 
         }
@@ -244,5 +270,55 @@ namespace userInterface_Classic
             ((Control)this.Voltage).Enabled = false;
             ((Control)this.Positioning).Enabled = false;
         }
+
+        private void CheckButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LedCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConnectButton_Click(object sender, EventArgs e)
+        {
+            if (!isConnected)
+            {
+                ConnectToArduino();
+            }
+            else
+            {
+                DisconnectFromArduino();
+            }
+        }
+        private void ConnectToArduino()
+        {
+            isConnected = true;
+            string selectedPort = portsComboBox.GetItemText(portsComboBox.SelectedItem);
+            port = new SerialPort(selectedPort, 9600, Parity.None, 8, StopBits.One);
+            port.Open();
+            port.Write("#STAR\n");
+            connectButton.Text = "Disconnect";
+      
+        }
+        private void DisconnectFromArduino()
+        {
+            isConnected = false;
+            port.Write("#STOP\n");
+            port.Close();
+            connectButton.Text = "Connect";
+     
+        }
+
+        void sendS(String string2)
+        {
+            if (isConnected)
+            {
+                Console.WriteLine(string2);
+                port.Write(string2);
+            }
+        }
+
     }
 }

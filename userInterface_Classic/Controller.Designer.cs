@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.portsComboBox = new System.Windows.Forms.ComboBox();
             this.Temperature = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.label52 = new System.Windows.Forms.Label();
             this.heaterSetLabel3 = new System.Windows.Forms.Label();
@@ -76,6 +77,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.HeaterConfigPictureBox1 = new System.Windows.Forms.PictureBox();
             this.Voltage = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -128,6 +130,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.VoltpictureBox1 = new System.Windows.Forms.PictureBox();
             this.Pressure = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.zone2SetLabel = new System.Windows.Forms.Label();
@@ -182,9 +185,6 @@
             this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -288,6 +288,7 @@
             this.checkButton.TabIndex = 3;
             this.checkButton.Text = "Check";
             this.checkButton.UseVisualStyleBackColor = true;
+            this.checkButton.Click += new System.EventHandler(this.CheckButton_Click);
             // 
             // testNumericUpDown
             // 
@@ -331,6 +332,7 @@
             this.ledCheckBox1.TabIndex = 0;
             this.ledCheckBox1.Text = "LED1";
             this.ledCheckBox1.UseVisualStyleBackColor = true;
+            this.ledCheckBox1.CheckedChanged += new System.EventHandler(this.LedCheckBox1_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -416,6 +418,7 @@
             this.connectButton.TabIndex = 2;
             this.connectButton.Text = "Connect";
             this.connectButton.UseVisualStyleBackColor = true;
+            this.connectButton.Click += new System.EventHandler(this.ConnectButton_Click);
             // 
             // label1
             // 
@@ -449,6 +452,15 @@
             this.Temperature.Size = new System.Drawing.Size(560, 307);
             this.Temperature.TabIndex = 1;
             this.Temperature.Text = "Temperature";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(478, 276);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Initialize";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // groupBox23
             // 
@@ -791,6 +803,15 @@
             this.Voltage.TabIndex = 2;
             this.Voltage.Text = "Voltage";
             this.Voltage.Click += new System.EventHandler(this.Voltage_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(478, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Initialize";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // groupBox22
             // 
@@ -1344,6 +1365,15 @@
             this.Pressure.Size = new System.Drawing.Size(560, 307);
             this.Pressure.TabIndex = 3;
             this.Pressure.Text = "Pressure";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(478, 276);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Initialize";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // groupBox21
             // 
@@ -1972,33 +2002,6 @@
             this.imageList1.Images.SetKeyName(3, "science-08-512.png");
             this.imageList1.Images.SetKeyName(4, "settings-512.png");
             this.imageList1.Images.SetKeyName(5, "eye-of-god.jpg");
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(478, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Initialize";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(478, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Initialize";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(478, 276);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Initialize";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // Controller
             // 
