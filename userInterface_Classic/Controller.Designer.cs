@@ -77,8 +77,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.HeaterConfigPictureBox1 = new System.Windows.Forms.PictureBox();
             this.Voltage = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Volt_InitializeButton = new System.Windows.Forms.Button();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.PSUSetVoltLabel6 = new System.Windows.Forms.Label();
@@ -185,6 +197,18 @@
             this.XaxisTrackBar = new System.Windows.Forms.TrackBar();
             this.GODs_Eye = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.mainTabController.SuspendLayout();
             this.Configuration.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -231,6 +255,12 @@
             this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).BeginInit();
+            this.groupBox24.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.groupBox26.SuspendLayout();
+            this.groupBox27.SuspendLayout();
+            this.groupBox28.SuspendLayout();
+            this.groupBox29.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainTabController
@@ -248,7 +278,7 @@
             this.mainTabController.Multiline = true;
             this.mainTabController.Name = "mainTabController";
             this.mainTabController.SelectedIndex = 0;
-            this.mainTabController.Size = new System.Drawing.Size(568, 337);
+            this.mainTabController.Size = new System.Drawing.Size(569, 371);
             this.mainTabController.TabIndex = 0;
             // 
             // Configuration
@@ -262,7 +292,7 @@
             this.Configuration.Location = new System.Drawing.Point(4, 26);
             this.Configuration.Name = "Configuration";
             this.Configuration.Padding = new System.Windows.Forms.Padding(3);
-            this.Configuration.Size = new System.Drawing.Size(560, 307);
+            this.Configuration.Size = new System.Drawing.Size(561, 341);
             this.Configuration.TabIndex = 0;
             this.Configuration.Text = "Configuration";
             this.Configuration.Click += new System.EventHandler(this.Configuration_Click);
@@ -449,7 +479,7 @@
             this.Temperature.Location = new System.Drawing.Point(4, 26);
             this.Temperature.Name = "Temperature";
             this.Temperature.Padding = new System.Windows.Forms.Padding(3);
-            this.Temperature.Size = new System.Drawing.Size(560, 307);
+            this.Temperature.Size = new System.Drawing.Size(561, 341);
             this.Temperature.TabIndex = 1;
             this.Temperature.Text = "Temperature";
             // 
@@ -791,7 +821,7 @@
             // Voltage
             // 
             this.Voltage.BackColor = System.Drawing.Color.White;
-            this.Voltage.Controls.Add(this.button2);
+            this.Voltage.Controls.Add(this.Volt_InitializeButton);
             this.Voltage.Controls.Add(this.groupBox22);
             this.Voltage.Controls.Add(this.groupBox8);
             this.Voltage.Controls.Add(this.label6);
@@ -799,22 +829,41 @@
             this.Voltage.ImageIndex = 1;
             this.Voltage.Location = new System.Drawing.Point(4, 26);
             this.Voltage.Name = "Voltage";
-            this.Voltage.Size = new System.Drawing.Size(560, 307);
+            this.Voltage.Size = new System.Drawing.Size(561, 341);
             this.Voltage.TabIndex = 2;
             this.Voltage.Text = "Voltage";
             this.Voltage.Click += new System.EventHandler(this.Voltage_Click);
             // 
-            // button2
+            // Volt_InitializeButton
             // 
-            this.button2.Location = new System.Drawing.Point(478, 276);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Initialize";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Volt_InitializeButton.Location = new System.Drawing.Point(478, 310);
+            this.Volt_InitializeButton.Name = "Volt_InitializeButton";
+            this.Volt_InitializeButton.Size = new System.Drawing.Size(75, 23);
+            this.Volt_InitializeButton.TabIndex = 14;
+            this.Volt_InitializeButton.Text = "Initialize";
+            this.Volt_InitializeButton.UseVisualStyleBackColor = true;
+            this.Volt_InitializeButton.Click += new System.EventHandler(this.Volt_InitializeButton_Click);
             // 
             // groupBox22
             // 
+            this.groupBox22.Controls.Add(this.groupBox28);
+            this.groupBox22.Controls.Add(this.groupBox26);
+            this.groupBox22.Controls.Add(this.groupBox29);
+            this.groupBox22.Controls.Add(this.groupBox25);
+            this.groupBox22.Controls.Add(this.groupBox27);
+            this.groupBox22.Controls.Add(this.groupBox24);
+            this.groupBox22.Controls.Add(this.label58);
+            this.groupBox22.Controls.Add(this.label59);
+            this.groupBox22.Controls.Add(this.label60);
+            this.groupBox22.Controls.Add(this.label61);
+            this.groupBox22.Controls.Add(this.label62);
+            this.groupBox22.Controls.Add(this.label63);
+            this.groupBox22.Controls.Add(this.label41);
+            this.groupBox22.Controls.Add(this.label49);
+            this.groupBox22.Controls.Add(this.label53);
+            this.groupBox22.Controls.Add(this.label55);
+            this.groupBox22.Controls.Add(this.label56);
+            this.groupBox22.Controls.Add(this.label57);
             this.groupBox22.Controls.Add(this.label47);
             this.groupBox22.Controls.Add(this.label48);
             this.groupBox22.Controls.Add(this.PSUSetVoltLabel6);
@@ -835,15 +884,123 @@
             this.groupBox22.Controls.Add(this.PSUSetVoltLabel1);
             this.groupBox22.Location = new System.Drawing.Point(12, 226);
             this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(463, 64);
+            this.groupBox22.Size = new System.Drawing.Size(463, 107);
             this.groupBox22.TabIndex = 13;
             this.groupBox22.TabStop = false;
             this.groupBox22.Text = "Current Settings";
             // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(382, 33);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(21, 13);
+            this.label58.TabIndex = 47;
+            this.label58.Text = "KV";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(342, 33);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(34, 13);
+            this.label59.TabIndex = 46;
+            this.label59.Text = "0.000";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(243, 33);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(21, 13);
+            this.label60.TabIndex = 45;
+            this.label60.Text = "KV";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(203, 33);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(34, 13);
+            this.label61.TabIndex = 44;
+            this.label61.Text = "0.000";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(96, 33);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(21, 13);
+            this.label62.TabIndex = 43;
+            this.label62.Text = "KV";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(56, 33);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(34, 13);
+            this.label63.TabIndex = 42;
+            this.label63.Text = "0.000";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(382, 74);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(21, 13);
+            this.label41.TabIndex = 41;
+            this.label41.Text = "KV";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(342, 74);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(34, 13);
+            this.label49.TabIndex = 40;
+            this.label49.Text = "0.000";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(243, 74);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(21, 13);
+            this.label53.TabIndex = 39;
+            this.label53.Text = "KV";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(203, 74);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(34, 13);
+            this.label55.TabIndex = 38;
+            this.label55.Text = "0.000";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(96, 74);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(21, 13);
+            this.label56.TabIndex = 37;
+            this.label56.Text = "KV";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(56, 74);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(34, 13);
+            this.label57.TabIndex = 36;
+            this.label57.Text = "0.000";
+            // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(266, 47);
+            this.label47.Location = new System.Drawing.Point(298, 61);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(38, 13);
             this.label47.TabIndex = 35;
@@ -852,7 +1009,7 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(350, 47);
+            this.label48.Location = new System.Drawing.Point(382, 61);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(21, 13);
             this.label48.TabIndex = 34;
@@ -861,7 +1018,7 @@
             // PSUSetVoltLabel6
             // 
             this.PSUSetVoltLabel6.AutoSize = true;
-            this.PSUSetVoltLabel6.Location = new System.Drawing.Point(310, 47);
+            this.PSUSetVoltLabel6.Location = new System.Drawing.Point(342, 61);
             this.PSUSetVoltLabel6.Name = "PSUSetVoltLabel6";
             this.PSUSetVoltLabel6.Size = new System.Drawing.Size(34, 13);
             this.PSUSetVoltLabel6.TabIndex = 33;
@@ -870,7 +1027,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(266, 20);
+            this.label42.Location = new System.Drawing.Point(298, 20);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(38, 13);
             this.label42.TabIndex = 32;
@@ -879,7 +1036,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(350, 20);
+            this.label45.Location = new System.Drawing.Point(382, 20);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(21, 13);
             this.label45.TabIndex = 31;
@@ -888,7 +1045,7 @@
             // PSUSetVoltLabel5
             // 
             this.PSUSetVoltLabel5.AutoSize = true;
-            this.PSUSetVoltLabel5.Location = new System.Drawing.Point(310, 20);
+            this.PSUSetVoltLabel5.Location = new System.Drawing.Point(342, 20);
             this.PSUSetVoltLabel5.Name = "PSUSetVoltLabel5";
             this.PSUSetVoltLabel5.Size = new System.Drawing.Size(34, 13);
             this.PSUSetVoltLabel5.TabIndex = 30;
@@ -897,7 +1054,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(142, 47);
+            this.label30.Location = new System.Drawing.Point(159, 61);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(38, 13);
             this.label30.TabIndex = 29;
@@ -906,7 +1063,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(226, 47);
+            this.label31.Location = new System.Drawing.Point(243, 61);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(21, 13);
             this.label31.TabIndex = 28;
@@ -915,7 +1072,7 @@
             // PSUSetVoltLabel4
             // 
             this.PSUSetVoltLabel4.AutoSize = true;
-            this.PSUSetVoltLabel4.Location = new System.Drawing.Point(186, 47);
+            this.PSUSetVoltLabel4.Location = new System.Drawing.Point(203, 61);
             this.PSUSetVoltLabel4.Name = "PSUSetVoltLabel4";
             this.PSUSetVoltLabel4.Size = new System.Drawing.Size(34, 13);
             this.PSUSetVoltLabel4.TabIndex = 27;
@@ -924,7 +1081,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(142, 20);
+            this.label38.Location = new System.Drawing.Point(159, 20);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(38, 13);
             this.label38.TabIndex = 26;
@@ -933,7 +1090,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(226, 20);
+            this.label39.Location = new System.Drawing.Point(243, 20);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(21, 13);
             this.label39.TabIndex = 25;
@@ -942,7 +1099,7 @@
             // PSUSetVoltLabel3
             // 
             this.PSUSetVoltLabel3.AutoSize = true;
-            this.PSUSetVoltLabel3.Location = new System.Drawing.Point(186, 20);
+            this.PSUSetVoltLabel3.Location = new System.Drawing.Point(203, 20);
             this.PSUSetVoltLabel3.Name = "PSUSetVoltLabel3";
             this.PSUSetVoltLabel3.Size = new System.Drawing.Size(34, 13);
             this.PSUSetVoltLabel3.TabIndex = 24;
@@ -951,7 +1108,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(12, 47);
+            this.label35.Location = new System.Drawing.Point(12, 61);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(38, 13);
             this.label35.TabIndex = 23;
@@ -960,7 +1117,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(96, 47);
+            this.label36.Location = new System.Drawing.Point(96, 61);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(21, 13);
             this.label36.TabIndex = 22;
@@ -969,7 +1126,7 @@
             // PSUSetVoltLabel2
             // 
             this.PSUSetVoltLabel2.AutoSize = true;
-            this.PSUSetVoltLabel2.Location = new System.Drawing.Point(56, 47);
+            this.PSUSetVoltLabel2.Location = new System.Drawing.Point(56, 61);
             this.PSUSetVoltLabel2.Name = "PSUSetVoltLabel2";
             this.PSUSetVoltLabel2.Size = new System.Drawing.Size(34, 13);
             this.PSUSetVoltLabel2.TabIndex = 21;
@@ -1011,7 +1168,7 @@
             this.groupBox8.Controls.Add(this.groupBox11);
             this.groupBox8.Location = new System.Drawing.Point(198, 3);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(277, 228);
+            this.groupBox8.Size = new System.Drawing.Size(277, 227);
             this.groupBox8.TabIndex = 8;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Set Point";
@@ -1335,7 +1492,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 163);
+            this.label6.Location = new System.Drawing.Point(24, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 13);
             this.label6.TabIndex = 2;
@@ -1344,7 +1501,7 @@
             // 
             // VoltpictureBox1
             // 
-            this.VoltpictureBox1.Location = new System.Drawing.Point(8, 3);
+            this.VoltpictureBox1.Location = new System.Drawing.Point(8, 8);
             this.VoltpictureBox1.Name = "VoltpictureBox1";
             this.VoltpictureBox1.Size = new System.Drawing.Size(184, 157);
             this.VoltpictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1362,7 +1519,7 @@
             this.Pressure.ImageKey = "pressure-512.png";
             this.Pressure.Location = new System.Drawing.Point(4, 26);
             this.Pressure.Name = "Pressure";
-            this.Pressure.Size = new System.Drawing.Size(560, 307);
+            this.Pressure.Size = new System.Drawing.Size(561, 341);
             this.Pressure.TabIndex = 3;
             this.Pressure.Text = "Pressure";
             // 
@@ -1637,7 +1794,7 @@
             this.Positioning.ImageIndex = 0;
             this.Positioning.Location = new System.Drawing.Point(4, 26);
             this.Positioning.Name = "Positioning";
-            this.Positioning.Size = new System.Drawing.Size(560, 307);
+            this.Positioning.Size = new System.Drawing.Size(561, 341);
             this.Positioning.TabIndex = 4;
             this.Positioning.Text = "Positioning";
             // 
@@ -1988,7 +2145,7 @@
             this.GODs_Eye.ImageKey = "eye-of-god.jpg";
             this.GODs_Eye.Location = new System.Drawing.Point(4, 26);
             this.GODs_Eye.Name = "GODs_Eye";
-            this.GODs_Eye.Size = new System.Drawing.Size(560, 307);
+            this.GODs_Eye.Size = new System.Drawing.Size(561, 341);
             this.GODs_Eye.TabIndex = 5;
             this.GODs_Eye.Text = "God\'s Eye";
             // 
@@ -2003,11 +2160,125 @@
             this.imageList1.Images.SetKeyName(4, "settings-512.png");
             this.imageList1.Images.SetKeyName(5, "eye-of-god.jpg");
             // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.radioButton1);
+            this.groupBox24.Location = new System.Drawing.Point(116, 12);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(34, 33);
+            this.groupBox24.TabIndex = 48;
+            this.groupBox24.TabStop = false;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(11, 12);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(14, 13);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.radioButton2);
+            this.groupBox25.Location = new System.Drawing.Point(116, 55);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(34, 33);
+            this.groupBox25.TabIndex = 49;
+            this.groupBox25.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(11, 12);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(14, 13);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.radioButton3);
+            this.groupBox26.Location = new System.Drawing.Point(263, 54);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(34, 33);
+            this.groupBox26.TabIndex = 51;
+            this.groupBox26.TabStop = false;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(11, 12);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(14, 13);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.radioButton4);
+            this.groupBox27.Location = new System.Drawing.Point(261, 11);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Size = new System.Drawing.Size(34, 33);
+            this.groupBox27.TabIndex = 50;
+            this.groupBox27.TabStop = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(11, 12);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(14, 13);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.radioButton5);
+            this.groupBox28.Location = new System.Drawing.Point(407, 53);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Size = new System.Drawing.Size(34, 33);
+            this.groupBox28.TabIndex = 51;
+            this.groupBox28.TabStop = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(11, 12);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(14, 13);
+            this.radioButton5.TabIndex = 0;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.radioButton6);
+            this.groupBox29.Location = new System.Drawing.Point(406, 9);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Size = new System.Drawing.Size(34, 33);
+            this.groupBox29.TabIndex = 50;
+            this.groupBox29.TabStop = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(11, 12);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(14, 13);
+            this.radioButton6.TabIndex = 0;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
             // Controller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 337);
+            this.ClientSize = new System.Drawing.Size(569, 371);
             this.Controls.Add(this.mainTabController);
             this.Name = "Controller";
             this.Text = "Controller";
@@ -2077,6 +2348,18 @@
             this.groupBox16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisNumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.XaxisTrackBar)).EndInit();
+            this.groupBox24.ResumeLayout(false);
+            this.groupBox24.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox27.PerformLayout();
+            this.groupBox28.ResumeLayout(false);
+            this.groupBox28.PerformLayout();
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2236,8 +2519,32 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Volt_InitializeButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.GroupBox groupBox28;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.GroupBox groupBox29;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.GroupBox groupBox27;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

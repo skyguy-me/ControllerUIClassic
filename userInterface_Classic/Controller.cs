@@ -150,33 +150,32 @@ namespace userInterface_Classic
             if (VoltCheckBox1.Checked)
             {
                 PSUSetVoltLabel1.Text = voltNumericUpDown1.Value.ToString();
-                sendS("#SVLT" + ((voltNumericUpDown1.Value)*1000).ToString() + "\n");
-
+ 
             }
             if (VoltCheckBox2.Checked)
             {
                 PSUSetVoltLabel2.Text = voltNumericUpDown2.Value.ToString();
-                sendS("#SVLT" + voltNumericUpDown2.Value.ToString() + "\n");
+               
             }
             if (VoltCheckBox3.Checked)
             {
                 PSUSetVoltLabel3.Text = voltNumericUpDown3.Value.ToString();
-                sendS("#SVT3" + voltNumericUpDown3.Value.ToString() + "\n");
+           
             }
             if (VoltCheckBox4.Checked)
             {
                 PSUSetVoltLabel4.Text = voltNumericUpDown4.Value.ToString();
-                sendS("#SVT4" + voltNumericUpDown4.Value.ToString() + "\n");
+                
             }
             if (VoltCheckBox5.Checked)
             {
                 PSUSetVoltLabel5.Text = voltNumericUpDown5.Value.ToString();
-                sendS("#SVT5" + voltNumericUpDown5.Value.ToString() + "\n");
+         
             }
             if (VoltCheckBox6.Checked)
             {
                 PSUSetVoltLabel6.Text = voltNumericUpDown6.Value.ToString();
-                sendS("#SVT6" + voltNumericUpDown6.Value.ToString() + "\n");
+
             }
 
         }
@@ -221,6 +220,7 @@ namespace userInterface_Classic
             if (VoltageControlCheckBox.Checked)
             {
                 voltageEnabled = true;
+                sendS("#VOLT  " + "\n");
             }
             else
             {
@@ -321,5 +321,34 @@ namespace userInterface_Classic
             }
         }
 
+        private void Volt_InitializeButton_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox1.Checked)
+            {
+                sendS("#SVT1" + ((voltNumericUpDown1.Value) * 1000).ToString() + "\n");
+            }
+            if (VoltCheckBox2.Checked)
+            {
+                sendS("#SVT2" + voltNumericUpDown2.Value.ToString() + "\n");
+            }
+            if (VoltCheckBox3.Checked)
+            {
+               
+                sendS("#SVT3" + voltNumericUpDown3.Value.ToString() + "\n");
+            }
+            if (VoltCheckBox4.Checked)
+            {
+                sendS("#SVT4" + voltNumericUpDown4.Value.ToString() + "\n");
+            }
+            if (VoltCheckBox5.Checked)
+            {
+                sendS("#SVT5" + voltNumericUpDown5.Value.ToString() + "\n");
+            }
+            if (VoltCheckBox6.Checked)
+            {
+                sendS("#SVT6" + voltNumericUpDown6.Value.ToString() + "\n");
+            }
+
+        }
     }
 }
