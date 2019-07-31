@@ -150,12 +150,13 @@ namespace userInterface_Classic
             if (VoltCheckBox1.Checked)
             {
                 PSUSetVoltLabel1.Text = voltNumericUpDown1.Value.ToString();
- 
+                sendS("#SVT1" + ((voltNumericUpDown1.Value) * 1000).ToString() + "\n");
             }
             if (VoltCheckBox2.Checked)
             {
                 PSUSetVoltLabel2.Text = voltNumericUpDown2.Value.ToString();
-               
+                sendS("#SVT2" + ((voltNumericUpDown2.Value) * 1000).ToString() + "\n");
+
             }
             if (VoltCheckBox3.Checked)
             {
@@ -220,7 +221,7 @@ namespace userInterface_Classic
             if (VoltageControlCheckBox.Checked)
             {
                 voltageEnabled = true;
-                sendS("#VOLT  " + "\n");
+                sendS("#VOLT" + "\n");
             }
             else
             {
