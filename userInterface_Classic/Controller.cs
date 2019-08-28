@@ -324,10 +324,12 @@ namespace userInterface_Classic
 
         private void Volt_InitializeButton_Click(object sender, EventArgs e)
         {
-            if (VoltCheckBox1.Checked)
+          /*  if (VoltCheckBox1.Checked)
             {
                 sendS("#SVT1" + ((voltNumericUpDown1.Value) * 1000).ToString() + "\n");
             }
+            
+    
             if (VoltCheckBox2.Checked)
             {
                 sendS("#SVT2" + voltNumericUpDown2.Value.ToString() + "\n");
@@ -349,7 +351,40 @@ namespace userInterface_Classic
             {
                 sendS("#SVT6" + voltNumericUpDown6.Value.ToString() + "\n");
             }
+            */
+        }
 
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox1.Checked)
+            {
+                sendS("#SVT1" + ((voltNumericUpDown1.Value) * 1000).ToString() + "\n");
+            }
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox2.Checked)
+            {
+                sendS("#SVT2" + voltNumericUpDown2.Value.ToString() + "\n");
+            }
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox3.Checked)
+            {
+
+                sendS("#SVT3" + voltNumericUpDown3.Value.ToString() + "\n");
+            }
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            if (VoltCheckBox4.Checked)
+            {
+                sendS("#SVT4" + voltNumericUpDown4.Value.ToString() + "\n");
+            }
         }
     }
 }

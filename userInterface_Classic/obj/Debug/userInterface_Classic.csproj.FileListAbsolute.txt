@@ -31,3 +31,4 @@ C:\Users\e0310994\Documents\GitHub\ControllerUIClassic\userInterface_Classic\obj
 C:\Users\e0310994\Documents\GitHub\ControllerUIClassic\userInterface_Classic\obj\Debug\userInterface_Classic.application
 C:\Users\e0310994\Documents\GitHub\ControllerUIClassic\userInterface_Classic\obj\Debug\userInterface_Classic.exe
 C:\Users\e0310994\Documents\GitHub\ControllerUIClassic\userInterface_Classic\obj\Debug\userInterface_Classic.pdb
+C:\Users\e0310994\Documents\GitHub\ControllerUIClassic\userInterface_Classic\obj\Debug\userInterface_Classic.csprojAssemblyReference.cache
